@@ -1,6 +1,10 @@
 /* Colors */
 /* Font sizes */
 /* Fonts */
+/* LINKS */
+/* Colors */
+/* Font sizes */
+/* Fonts */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document ========================================================================== */
 /** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
@@ -109,3 +113,27 @@ template { display: none; }
 
 /** Add the correct display in IE 10. */
 [hidden] { display: none; }
+
+.page-header { font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 16px; color: #a6a6a6; }
+
+.section-header { font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 16px; color: #a6a6a6; }
+
+.section-text { font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 14px; color: #5d5d5d; }
+
+.large-link, .small-link { font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 16px; color: #56819f; text-decoration: none; }
+
+.small-link { font-size: 13px; }
+
+[class*="link"]:hover { color: #ffa200; }
+
+.tab { width: 126px; height: 40px; font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 16px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; text-decoration: none; }
+
+.tab--hover:hover { background-color: #f3f3f1; cursor: pointer; }
+
+.tab--focus:focus { background-color: #f3f3f1; cursor: pointer; }
+
+.table { width: 366px; height: 50px; border-top: 1px solid #e3e3e3; border-bottom: 1px solid #e3e3e3; }
+
+.table--items-position { margin-left: 20px; }
+
+.table--line-header { font-family: 'Roboto', sans-serif; font-weight: 700; margin-left: 20px; margin-right: 50%; width: 200px; display: -ms-flexbox; display: flex; -ms-flex-pack: start; justify-content: flex-start; }

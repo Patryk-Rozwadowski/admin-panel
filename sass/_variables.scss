@@ -3,8 +3,72 @@ $paragraph-color: #000000;
 $brand-main-color: #ff0000;
 
 /* Font sizes */
-$paragraph-font-size: 16px;
-
+$section-header-color: #a6a6a6;
+$page-header-color: #a6a6a6;
+$section-text-color: #5d5d5d;
 /* Fonts */
-$brand-font: "Open Sans", Helvetica, Arial;
-$paragraph-font: "Open Sans", Helvetica, Arial;
+@mixin page-header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size:16px;
+  color: $page-header-color;
+}
+@mixin section-header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size:16px;
+  color:$section-header-color;
+}
+@mixin section-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size:14px;
+  color: $section-text-color;
+}
+
+/* LINKS */
+@mixin large-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size:16px;
+  color: #56819f;
+  text-decoration: none;
+}
+@mixin link-hover {
+  color:#ffa200;
+}
+
+// COROR TABS
+@mixin tab {
+  width:126px;
+  height:40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size:16px;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  text-decoration: none;
+}
+
+// TABLE WITH LINK
+@mixin table {
+  width:366px;
+  height:50px;
+  border-top:1px solid #e3e3e3;
+  border-bottom:1px solid #e3e3e3;
+}
+
+@mixin table--items-position {
+  margin-left:20px;
+}
+
+@mixin table--line-header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-left:20px;
+  margin-right:50%;
+  width:200px;
+  display:flex;
+  justify-content: flex-start;
+}
