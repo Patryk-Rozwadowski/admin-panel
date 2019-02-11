@@ -50,3 +50,6 @@
 .table--line-header {
   @include table--line-header;
 }
+.table--hover:hover {
+  background-color:#f1f3f3;
+}

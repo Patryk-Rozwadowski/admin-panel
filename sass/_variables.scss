@@ -55,8 +55,9 @@ $section-text-color: #5d5d5d;
 @mixin table {
   width:366px;
   height:50px;
-  border-top:1px solid #e3e3e3;
-  border-bottom:1px solid #e3e3e3;
+  outline:1px solid #e3e3e3;
+  display:flex;
+  align-items: center;
 }
 
 @mixin table--items-position {
@@ -67,8 +68,10 @@ $section-text-color: #5d5d5d;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   margin-left:20px;
-  margin-right:50%;
+  margin-right:50px;
   width:200px;
+  height:50px;
   display:flex;
   justify-content: flex-start;
+  align-items: center;
 }
