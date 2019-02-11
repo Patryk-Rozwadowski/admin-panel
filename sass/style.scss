@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'normalize';
+@import 'mixins';
 @import 'layout';
 
 // HEADERS
@@ -20,10 +21,12 @@
 .small-link {
   @extend .large-link;
   font-size: 13px;
-}
+}                                       ////////// DODAC SVG!
 [class*="link"]:hover {
   color:#ffa200;
 }
+
+
 
 // TABS
 .tab {
@@ -52,4 +55,21 @@
 }
 .table--hover:hover {
   background-color:#f1f3f3;
+}
+
+// Button
+.btn {
+  @include btn;
+}
+.btn--dark-grey {
+  background-color: $dark-grey;
+}
+.btn--grey {
+  background-color: $grey;
+}
+.btn--dark-orange {
+  background-color: $dark-orange;
+}
+.btn--orange {
+  background-color: $orange;
 }
