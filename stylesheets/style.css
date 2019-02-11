@@ -149,3 +149,5 @@ template { display: none; }
 .btn--dark-orange { background-color: #f58220; }
 
 .btn--orange { background-color: #ffa200; }
+
+.btn-disabled { width: 203px; background-color: #e3e3e3; }

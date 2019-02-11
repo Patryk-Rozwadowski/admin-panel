@@ -1,6 +1,7 @@
 /* Colors */
 $white: #fff;
 $dark-grey: #979797;
+$light-grey: #e3e3e3;
 $grey: #bababa;
 $dark-orange: #f58220;
 $orange: #ffa200;
@@ -87,4 +88,8 @@ $section-text-color: #5d5d5d;
   box-shadow: none;
   text-align: center;
   cursor: pointer;
+}
+@mixin btn-disabled {
+  width:203px;
+  background-color: $light-grey;
 }
