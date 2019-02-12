@@ -5,6 +5,7 @@ $light-grey: #e3e3e3;
 $grey: #bababa;
 $dark-orange: #f58220;
 $orange: #ffa200;
+$green-circle: #80bfca;
 /* Font sizes */
 $section-header-color: #a6a6a6;
 $page-header-color: #a6a6a6;
@@ -92,4 +93,33 @@ $section-text-color: #5d5d5d;
 @mixin btn-disabled {
   width:203px;
   background-color: $light-grey;
+}
+@mixin fa-circle {
+  width:100%;
+  height:16px;
+  color:$green-circle;
+  border:0;
+  margin:20px;
+}
+
+// LIST WITH ONE DIGIT
+@mixin list--one-digit {
+  width:370px;
+  height:40px;
+  border-bottom: 1px solid $light-grey;
+  align-items: center;
+  display: flex;
+}
+@mixin list--header {
+  @include section-header;
+  width:200px;
+  display:flex;
+  justify-content: flex-start;
+  text-align: center;
+}
+@mixin list--digit {
+  @include section-text;
+  width:150px;
+  display:flex;
+  justify-content: flex-end;
 }

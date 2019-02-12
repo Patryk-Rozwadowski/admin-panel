@@ -33,12 +33,15 @@
   @include tab;
 }
 .tab--hover:hover {
+  @include tab;
   background-color:#f3f3f1;
   cursor: pointer;
-}
-.tab--focus:focus {
-  background-color:#f3f3f1;
-  cursor: pointer;
+
+  &:focus {
+    @include tab;
+    background-color:#f3f3f1;
+    cursor: pointer;
+  }
 }
 
 // TABLE
@@ -55,6 +58,7 @@
 }
 .table--hover:hover {
   background-color:#f1f3f3;
+  cursor: pointer;
 }
 
 // Button
@@ -75,4 +79,19 @@
 }
 .btn-disabled {
   @include btn-disabled;
+}
+.fa-circle {
+  @include fa-circle;
+}
+
+
+// LIST WITH ONE DIGIT
+.list--one-digit {
+  @include list--one-digit;
+}
+.list--header {
+  @include section-header;
+}
+.list--digit {
+  @include list--digit;
 }
