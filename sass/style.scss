@@ -33,17 +33,14 @@
   @include tab;
 }
 .tab--hover:hover {
-  @include tab;
   background-color:#f3f3f1;
   cursor: pointer;
-
-  &:focus {
-    @include tab;
-    background-color:#f3f3f1;
-    cursor: pointer;
-  }
 }
-
+.tab--focus:focus {
+  @extend .tab;
+  background-color:#f3f3f1;
+  cursor: pointer;
+}
 // TABLE
 .table {
   @include table;
