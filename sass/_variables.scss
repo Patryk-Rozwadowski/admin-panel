@@ -123,3 +123,24 @@ $section-text-color: #5d5d5d;
   display:flex;
   justify-content: flex-end;
 }
+
+// DATE PERIOD
+@mixin date--period--container {
+  width:325px;
+  height:40px;
+  border:1px solid $light-grey;
+  display:flex;
+  align-items: center;
+}
+
+@mixin date--period--date-from {
+  width:40%;
+  height:28px;
+  border-right:1px solid $light-grey;
+  margin-left:30px;
+}
+@mixin date--period--date-to {
+  width:33%;
+  height:28px;
+  margin-left:30px;
+}

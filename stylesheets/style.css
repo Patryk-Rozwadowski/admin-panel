@@ -2,6 +2,25 @@
 /* Font sizes */
 /* Fonts */
 /* LINKS */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
 /* Colors */
 /* Font sizes */
 /* Fonts */
@@ -120,6 +139,8 @@ template { display: none; }
 
 ul { padding-left: 10px; }
 
+button { background-color: #fff; }
+
 .page-header { font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 16px; color: #a6a6a6; }
 
 .section-header { font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 16px; color: #a6a6a6; }
@@ -132,11 +153,11 @@ ul { padding-left: 10px; }
 
 [class*="link"]:hover { color: #ffa200; }
 
-.tab { width: 126px; height: 40px; font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 16px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; text-decoration: none; }
+.tab, .tab--focus:focus { width: 126px; height: 40px; font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 16px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; text-decoration: none; }
 
-.tab--hover:hover { width: 126px; height: 40px; font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 16px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; text-decoration: none; background-color: #f3f3f1; cursor: pointer; }
+.tab--hover:hover { background-color: #f3f3f1; cursor: pointer; }
 
-.tab--hover:hover:focus { width: 126px; height: 40px; font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 16px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; text-decoration: none; background-color: #f3f3f1; cursor: pointer; }
+.tab--focus:focus { background-color: #f3f3f1; cursor: pointer; }
 
 .table { width: 366px; height: 50px; outline: 1px solid #e3e3e3; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
 
@@ -165,3 +186,32 @@ ul { padding-left: 10px; }
 .list--header { font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 16px; color: #a6a6a6; }
 
 .list--digit { font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 14px; color: #5d5d5d; width: 150px; display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; }
+
+.date--period--container { width: 325px; height: 40px; border: 1px solid #e3e3e3; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
+
+.date--period-from { width: 40%; height: 28px; border-right: 1px solid #e3e3e3; margin-left: 30px; font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 14px; color: #5d5d5d; display: -ms-flexbox; display: flex; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-align: center; align-items: center; }
+
+.date--period--date-to { width: 33%; height: 28px; margin-left: 30px; font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 14px; color: #5d5d5d; display: -ms-flexbox; display: flex; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-align: center; align-items: center; }
+
+.calendar--icon { width: 13px; height: 13px; display: -ms-flexbox; display: flex; content: '\0048'; color: #e3e3e3; display: inline-block; font-family: 'Glyphter'; font-style: normal; font-weight: normal; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* @font-face {
+    font-family: 'Glyphter';
+    src: url('../fonts/Glyphter.eot');
+    src: url('../fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Glyphter.woff') format('woff'),
+         url('../fonts/Glyphter.ttf') format('truetype'),
+         url('../fonts/Glyphter.svg#Glyphter') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class*='icon-']:before{
+	display: inline-block;
+   font-family: 'Glyphter';
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale
+}
+*/

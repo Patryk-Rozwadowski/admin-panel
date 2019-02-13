@@ -4,3 +4,8 @@
   justify-content: flex-start;
   align-items: center;
 }
+
+@mixin row {
+  display:flex;
+  flex-direction: row;
+}

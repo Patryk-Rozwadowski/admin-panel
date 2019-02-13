@@ -92,3 +92,56 @@
 .list--digit {
   @include list--digit;
 }
+
+// DATE
+.date--period--container {
+  @include date--period--container;
+}
+.date--period-from {
+  @include date--period--date-from;
+  @include section-text;
+  @include flex-center;
+}
+.date--period--date-to {
+  @include date--period--date-to;
+  @include section-text;
+  @include flex-center;
+}
+
+////////////////////////////
+.calendar--icon {
+  width:13px;
+  height:13px;
+  display:flex;
+  content:'\0048';
+  color: $light-grey;
+  display: inline-block;
+   font-family: 'Glyphter';
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale
+}
+////////////////////////////////
+
+/* @font-face {
+    font-family: 'Glyphter';
+    src: url('../fonts/Glyphter.eot');
+    src: url('../fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Glyphter.woff') format('woff'),
+         url('../fonts/Glyphter.ttf') format('truetype'),
+         url('../fonts/Glyphter.svg#Glyphter') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class*='icon-']:before{
+	display: inline-block;
+   font-family: 'Glyphter';
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale
+}
+*/
