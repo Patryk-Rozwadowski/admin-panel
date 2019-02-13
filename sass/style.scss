@@ -2,6 +2,16 @@
 @import 'normalize';
 @import 'mixins';
 @import 'layout';
+@import 'Glyphter';
+
+// FLEX CENTER
+.flex-center {
+  @include flex-center;
+}
+
+.width-100 {
+  width:100%;
+}
 
 // HEADERS
 .page-header {
@@ -25,8 +35,6 @@
 [class*="link"]:hover {
   color:#ffa200;
 }
-
-
 
 // TABS
 .tab {
@@ -80,7 +88,11 @@
 .fa-circle {
   @include fa-circle;
 }
-
+.icon-links::before{
+  color:$white;
+  margin-left:10px;
+  margin-right:10px;
+}
 
 // LIST WITH ONE DIGIT
 .list--one-digit {
@@ -94,6 +106,10 @@
 }
 
 // DATE
+input {
+  @include date--period--container;
+  border:0;
+}
 .date--period--container {
   @include date--period--container;
 }
@@ -102,46 +118,17 @@
   @include section-text;
   @include flex-center;
 }
-.date--period--date-to {
+.date--period--date-to{
   @include date--period--date-to;
   @include section-text;
   @include flex-center;
 }
-
 ////////////////////////////
-.calendar--icon {
-  width:13px;
-  height:13px;
-  display:flex;
-  content:'\0048';
-  color: $light-grey;
-  display: inline-block;
-   font-family: 'Glyphter';
-   font-style: normal;
-   font-weight: normal;
-   line-height: 1;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale
+.icon-calendar:before  {
+  color:$light-grey;
+  &:hover {
+    color:$dark-grey;
+  }
 }
-////////////////////////////////
-
-/* @font-face {
-    font-family: 'Glyphter';
-    src: url('../fonts/Glyphter.eot');
-    src: url('../fonts/Glyphter.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Glyphter.woff') format('woff'),
-         url('../fonts/Glyphter.ttf') format('truetype'),
-         url('../fonts/Glyphter.svg#Glyphter') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-[class*='icon-']:before{
-	display: inline-block;
-   font-family: 'Glyphter';
-   font-style: normal;
-   font-weight: normal;
-   line-height: 1;
-   -webkit-font-smoothing: antialiased;
-   -moz-osx-font-smoothing: grayscale
-}
-*/
+//////////////////////////////// poprawic taby - bordery
+////////////////////
