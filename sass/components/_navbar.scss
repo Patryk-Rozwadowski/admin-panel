@@ -1,0 +1,20 @@
+// NAVBAR
+
+@mixin nav--container {
+  width:100%;
+  height:60px;
+  border:1px solid $light-grey;
+  background-color:$white;
+  position: relative;
+}
+
+@mixin nav--exit {
+  position:absolute;
+  display:flex;
+  justify-content: center;
+  right:0;
+  top:0;
+  width:60px;
+  height: 60px;
+  border-right:1px solid $light-grey;
+}
