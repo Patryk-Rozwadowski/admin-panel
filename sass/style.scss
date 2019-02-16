@@ -3,6 +3,7 @@
 @import 'mixins';
 @import 'layout';
 @import 'Glyphter';
+@import 'components/navbar';
 
 // FLEX CENTER
 .flex-center {
@@ -132,3 +133,25 @@ input {
 }
 //////////////////////////////// poprawic taby - bordery
 ////////////////////
+
+
+// NAVBAR
+.nav--container {
+  @include nav--container;
+  @include flex-center;
+}
+.nav--exit {
+  @include nav--exit;
+}
+.icon-quit:before {
+  width:20px;
+  height:20px;
+  color:$dark-grey;
+}
+.nav--profile {
+  width:175px;
+  border-left:1px solid $light-grey;
+  position:absolute;
+  right:60px;
+  height:100%;
+}
