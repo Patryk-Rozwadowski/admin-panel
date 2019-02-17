@@ -16,7 +16,6 @@
 }
 
 // MAIN
-
 .container {
   @include container;
 }
@@ -37,7 +36,7 @@
   @include large-link;
 }
 .small-link {
-  @extend .large-link;
+  @include large-link;
   font-size: 13px;
 }                                       ////////// DODAC SVG!
 [class*="link"]:hover {
@@ -47,15 +46,14 @@
 // TABS
 .tab {
   @include tab;
-}
-.tab--hover:hover {
-  background-color:#f3f3f1;
-  cursor: pointer;
-}
-.tab--focus:focus {
-  @extend .tab;
-  background-color:#f3f3f1;
-  cursor: pointer;
+  &:hover {
+    background-color:#f3f3f1;
+    cursor: pointer;
+  }
+  &:focus {
+    background-color:#f3f3f1;
+    cursor: pointer;
+  }
 }
 // TABLE
 .table {

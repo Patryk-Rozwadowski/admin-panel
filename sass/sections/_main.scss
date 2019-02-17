@@ -1,5 +1,4 @@
 // MAIN
-
 body {
   position:relative;
   background-color:$light-grey;
@@ -11,5 +10,6 @@ main {
 @mixin container {
   max-width:1056px;
   background-color:$white;
-  margin:18px;
+  padding-left: 15px;
+  padding-right: 15px;
 }

@@ -12,29 +12,37 @@ $page-header-color: #a6a6a6;
 $section-text-color: #5d5d5d;
 /* Fonts */
 @mixin page-header {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size:16px;
+  font: {
+    family: 'Roboto', sans-serif;
+    weight: 500;
+    size: 16px;
+  }
   color: $page-header-color;
 }
 @mixin section-header {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size:16px;
+  font: {
+    family: 'Roboto', sans-serif;
+    weight: 700;
+    size: 16px;
+  }
   color:$section-header-color;
 }
 @mixin section-text {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size:14px;
+  font: {
+    family: 'Roboto', sans-serif;
+    weight: 300;
+    size: 14px;
+  }
   color: $section-text-color;
 }
 
 /* LINKS */
 @mixin large-link {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size:16px;
+  font: {
+    family: 'Roboto', sans-serif;
+    weight: 300;
+    size: 16px;
+  }
   color: #56819f;
   text-decoration: none;
 }
@@ -46,12 +54,7 @@ $section-text-color: #5d5d5d;
 @mixin tab {
   width:126px;
   height:40px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size:16px;
-  display:flex;
-  justify-content:center;
-  align-items: center;
+  border:0;
   text-decoration: none;
 }
 
