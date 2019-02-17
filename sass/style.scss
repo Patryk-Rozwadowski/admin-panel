@@ -148,6 +148,10 @@ input {
   @include nav--notification;
 }
 
+.nav--wallet {
+  @include nav--wallet;
+}
+
 // NAV ICONS
 .icon-quit{
   width:20px;
@@ -164,9 +168,16 @@ input {
   display:flex;
   justify-content: flex-end;
   align-items: flex-start;
+  color:$dark-grey;
 }
-
+.icon-arrow-down-small {
+  color:$dark-grey;
+  margin-left:10px;
+}
+.icon-wallet {
+  color:$dark-grey;
+  margin-right:10px;
+}
 .nav--notification-circle {
   @include nav--notification-circle;
 }
-//////
