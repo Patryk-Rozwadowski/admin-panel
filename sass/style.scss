@@ -3,7 +3,8 @@
 @import 'mixins';
 @import 'layout';
 @import 'Glyphter';
-@import 'components/navbar';
+@import 'sections/navbar';
+@import 'sections/main';
 
 // FLEX CENTER
 .flex-center {
@@ -12,6 +13,12 @@
 
 .width-100 {
   width:100%;
+}
+
+// MAIN
+
+.container {
+  @include container;
 }
 
 // HEADERS

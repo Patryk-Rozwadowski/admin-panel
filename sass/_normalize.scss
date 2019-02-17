@@ -158,5 +158,6 @@ template { display: none; }
 [hidden] { display: none; }
 
 * {
+	box-sizing: border-box;
   list-style: none;
 }

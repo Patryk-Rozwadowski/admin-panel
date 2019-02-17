@@ -1,0 +1,15 @@
+// MAIN
+
+body {
+  position:relative;
+  background-color:$light-grey;
+}
+main {
+  position:absolute;
+  top:60px;
+}
+@mixin container {
+  max-width:1056px;
+  background-color:$white;
+  margin:18px;
+}
