@@ -198,7 +198,7 @@ template { display: none; }
 
 .icon-wallet:before { content: '\0062'; }
 
-.flex-center { display: -ms-flexbox; display: flex; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-align: center; align-items: center; }
+.flex-center { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
 .width-100 { width: 100%; }
 
@@ -224,7 +224,7 @@ template { display: none; }
 
 .table--items-position { margin-left: 20px; }
 
-.table--line-header { font-family: 'Roboto', sans-serif; font-weight: 700; margin-left: 20px; margin-right: 50px; width: 200px; height: 50px; display: -ms-flexbox; display: flex; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-align: center; align-items: center; }
+.table--line-header { font-family: 'Roboto', sans-serif; font-weight: 700; margin-left: 20px; margin-right: 50px; width: 200px; height: 50px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
 .table--hover:hover { background-color: #f1f3f3; cursor: pointer; }
 
@@ -254,18 +254,26 @@ input { width: 325px; height: 40px; border: 1px solid #e3e3e3; display: -ms-flex
 
 .date--period--container { width: 325px; height: 40px; border: 1px solid #e3e3e3; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
 
-.date--period-from { width: 33%; height: 28px; border-right: 1px solid #e3e3e3; margin-left: 30px; padding-right: 20px; font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 14px; color: #5d5d5d; display: -ms-flexbox; display: flex; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-align: center; align-items: center; }
+.date--period-from { width: 33%; height: 28px; border-right: 1px solid #e3e3e3; margin-left: 30px; padding-right: 20px; font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 14px; color: #5d5d5d; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
-.date--period--date-to { width: 33%; height: 28px; margin-left: 10px; padding-right: 20px; font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 14px; color: #5d5d5d; display: -ms-flexbox; display: flex; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-align: center; align-items: center; }
+.date--period--date-to { width: 33%; height: 28px; margin-left: 10px; padding-right: 20px; font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 14px; color: #5d5d5d; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
 .icon-calendar:before { color: #e3e3e3; }
 
 .icon-calendar:before:hover { color: #979797; }
 
-.nav--container { width: 100%; height: 60px; border: 1px solid #e3e3e3; background-color: #fff; position: relative; display: -ms-flexbox; display: flex; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-align: center; align-items: center; }
+.nav--container { width: 100%; height: 60px; border: 1px solid #e3e3e3; background-color: #fff; position: relative; }
 
-.nav--exit { position: absolute; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; right: 0; top: 0; width: 60px; height: 60px; border-right: 1px solid #e3e3e3; }
-
-.icon-quit:before { width: 20px; height: 20px; color: #979797; }
+.nav--exit { position: absolute; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; right: 0; top: 0; width: 60px; height: 60px; border-left: 1px solid #e3e3e3; }
 
 .nav--profile { width: 175px; border-left: 1px solid #e3e3e3; position: absolute; right: 60px; height: 100%; }
+
+.nav--notification { width: 60px; height: 60px; border-left: 1px solid #e3e3e3; position: absolute; right: 235px; }
+
+.icon-quit { width: 20px; height: 20px; color: #979797; }
+
+.icon-personaldata { margin-right: 15px; color: #979797; }
+
+.icon-notification { display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-align: start; align-items: flex-start; }
+
+.nav--notification-circle { width: 8px; height: 8px; border-radius: 50%; margin-left: -7px; margin-top: -2px; background-color: #f58220; }

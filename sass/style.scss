@@ -124,7 +124,6 @@ input {
   @include section-text;
   @include flex-center;
 }
-////////////////////////////
 .icon-calendar:before  {
   color:$light-grey;
   &:hover {
@@ -138,20 +137,36 @@ input {
 // NAVBAR
 .nav--container {
   @include nav--container;
-  @include flex-center;
 }
 .nav--exit {
   @include nav--exit;
 }
-.icon-quit:before {
+.nav--profile {
+  @include nav--profile;
+}
+.nav--notification {
+  @include nav--notification;
+}
+
+// NAV ICONS
+.icon-quit{
   width:20px;
   height:20px;
   color:$dark-grey;
 }
-.nav--profile {
-  width:175px;
-  border-left:1px solid $light-grey;
-  position:absolute;
-  right:60px;
-  height:100%;
+
+.icon-personaldata {
+  margin-right:15px;
+  color:$dark-grey;
 }
+
+.icon-notification {
+  display:flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.nav--notification-circle {
+  @include nav--notification-circle;
+}
+//////

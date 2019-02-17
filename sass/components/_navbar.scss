@@ -16,5 +16,27 @@
   top:0;
   width:60px;
   height: 60px;
-  border-right:1px solid $light-grey;
+  border-left:1px solid $light-grey;
+}
+@mixin nav--profile {
+  width:175px;
+  border-left:1px solid $light-grey;
+  position:absolute;
+  right:60px;
+  height:100%;
+}
+@mixin nav--notification {
+  width:60px;
+  height:60px;
+  border-left:1px solid $light-grey;
+  position:absolute;
+  right:235px;
+}
+@mixin nav--notification-circle {
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  margin-left:-7px;
+  margin-top:-2px;
+  background-color:$dark-orange;
 }
