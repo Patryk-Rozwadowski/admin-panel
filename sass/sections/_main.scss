@@ -7,9 +7,15 @@ main {
   position:absolute;
   top:60px;
 }
+
+// MAIN
 @mixin container {
   max-width:1056px;
   background-color:$white;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.container {
+  @include container;
 }
