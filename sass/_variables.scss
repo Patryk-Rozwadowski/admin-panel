@@ -10,6 +10,7 @@ $green-circle: #80bfca;
 $section-header-color: #a6a6a6;
 $page-header-color: #a6a6a6;
 $section-text-color: #5d5d5d;
+
 /* Fonts */
 @mixin page-header {
   font-family: 'Roboto', sans-serif;
@@ -31,19 +32,27 @@ $section-text-color: #5d5d5d;
 }
 
 /* LINKS */
-@mixin large-link {
+.large-link {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size:16px;
   color: #56819f;
   text-decoration: none;
-}
-@mixin link-hover {
-  color:#ffa200;
+  &:hover {
+    color:#ffa200;
+  }
 }
 
+.small-link {
+  @extend .large-link;
+  font-size: 13px;
+}
+
+[class*="link"]:hover {
+  color:#ffa200;
+}
 // COROR TABS
-@mixin tab {
+.tab {
   width:126px;
   height:40px;
   font-family: 'Roboto', sans-serif;
@@ -55,18 +64,32 @@ $section-text-color: #5d5d5d;
   text-decoration: none;
 }
 
+.tab--hover:hover {
+  background-color:#f3f3f1;
+  cursor: pointer;
+}
+.tab--focus:focus {
+  @extend .tab;
+  background-color:#f3f3f1;
+  cursor: pointer;
+}
+
 // TABLE WITH LINK
-@mixin table {
+.table--link {
   width:366px;
   height:50px;
   outline:1px solid #e3e3e3;
   display:flex;
   align-items: center;
+  &:hover {
+    background-color:#f1f3f3;
+    cursor: pointer;
+  }
 }
-@mixin table--items-position {
+.table--items-position {
   margin-left:20px;
 }
-@mixin table--line-header {
+.table--line-header {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   margin-left:20px;
@@ -77,7 +100,7 @@ $section-text-color: #5d5d5d;
 }
 
 // BUTTONS
-@mixin btn {
+.btn {
   width:93px;
   height:40px;
   border-radius:3px;
@@ -91,11 +114,25 @@ $section-text-color: #5d5d5d;
   text-align: center;
   cursor: pointer;
 }
-@mixin btn-disabled {
+
+.btn--dark-grey {
+  background-color: $dark-grey;
+}
+.btn--grey {
+  background-color: $grey;
+}
+.btn--dark-orange {
+  background-color: $dark-orange;
+}
+.btn--orange {
+  background-color: $orange;
+}
+
+.btn-disabled {
   width:203px;
   background-color: $light-grey;
 }
-@mixin fa-circle {
+.fa-circle {
   width:100%;
   height:16px;
   color:$green-circle;
@@ -104,21 +141,21 @@ $section-text-color: #5d5d5d;
 }
 
 // LIST WITH ONE DIGIT
-@mixin list--one-digit {
+.list--one-digit {
   width:370px;
   height:40px;
   border-bottom: 1px solid $light-grey;
   align-items: center;
   display: flex;
 }
-@mixin list--header {
+.list--header {
   @include section-header;
   width:200px;
   display:flex;
   justify-content: flex-start;
   text-align: center;
 }
-@mixin list--digit {
+.list--digit {
   @include section-text;
   width:150px;
   display:flex;
@@ -126,7 +163,7 @@ $section-text-color: #5d5d5d;
 }
 
 // DATE PERIOD
-@mixin date--period--container {
+.date--period--container {
   width:325px;
   height:40px;
   border:1px solid $light-grey;
@@ -134,16 +171,31 @@ $section-text-color: #5d5d5d;
   align-items: center;
 }
 
-@mixin date--period--date-from {
+.date--period--date-from {
   width:33%;
   height:28px;
   border-right:1px solid $light-grey;
   margin-left:30px;
   padding-right:20px;
+  @include section-text;
+  @include flex-center;
 }
-@mixin date--period--date-to {
+.date--period--date-to {
   width:33%;
   height:28px;
   margin-left:10px;
   padding-right:20px;
+  @include section-text;
+  @include flex-center;
+}
+
+.icon-calendar:before  {
+  color:$light-grey;
+  &:hover {
+    color:$dark-grey;
+  }
+}
+input {
+  @extend .date--period--container;
+  border:0;
 }

@@ -1,6 +1,6 @@
 // NAVBAR
 
-@mixin nav--container {
+.nav--container {
   width:100%;
   height:60px;
   border:1px solid $light-grey;
@@ -8,7 +8,7 @@
   position: fixed;
 }
 
-@mixin nav--exit {
+.nav--exit {
   position:absolute;
   display:flex;
   justify-content: center;
@@ -19,7 +19,7 @@
   border-left:1px solid $light-grey;
 }
 
-@mixin nav--profile {
+.nav--profile {
   width:175px;
   border-left:1px solid $light-grey;
   position:absolute;
@@ -27,7 +27,7 @@
   height:60px;
 }
 
-@mixin nav--notification {
+.nav--notification {
   width:60px;
   height:60px;
   border-left:1px solid $light-grey;
@@ -35,7 +35,7 @@
   right:235px;
 }
 
-@mixin nav--notification-circle {
+.nav--notification-circle {
   width:8px;
   height:8px;
   border-radius:50%;
@@ -44,10 +44,36 @@
   background-color:$dark-orange;
 }
 
-@mixin nav--wallet {
+.nav--wallet {
   width:185px;
   height:60px;
   border-left:1px solid $light-grey;
   position:absolute;
   right:285px;
+}
+
+.icon-quit{
+  width:20px;
+  height:20px;
+  color:$dark-grey;
+}
+
+.icon-personaldata {
+  margin-right:15px;
+  color:$dark-grey;
+}
+
+.icon-notification {
+  display:flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  color:$dark-grey;
+}
+.icon-arrow-down-small {
+  color:$dark-grey;
+  margin-left:10px;
+}
+.icon-wallet {
+  color:$dark-grey;
+  margin-right:10px;
 }

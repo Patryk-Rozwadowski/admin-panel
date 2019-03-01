@@ -1,190 +1,29 @@
+@import 'mixins';
 @import 'variables';
 @import 'normalize';
-@import 'mixins';
 @import 'layout';
 @import 'Glyphter';
 @import 'sections/navbar';
 @import 'sections/main';
 
 // FLEX CENTER
-.flex-center {
-  @include flex-center;
-}
 
 .width-100 {
   width:100%;
 }
 
-// MAIN
 
-.container {
-  @include container;
-}
-
-// HEADERS
-.page-header {
-  @include page-header;
-}
-.section-header {
-  @include section-header;
-}
-.section-text {
-  @include section-text;
+.row {
+  display:flex;
+  flex-direction: row;
 }
 
-// LINKS
-.large-link {
-  @include large-link;
-}
-.small-link {
-  @extend .large-link;
-  font-size: 13px;
-}                                       ////////// DODAC SVG!
-[class*="link"]:hover {
-  color:#ffa200;
-}
-
-// TABS
-.tab {
-  @include tab;
-}
-.tab--hover:hover {
-  background-color:#f3f3f1;
-  cursor: pointer;
-}
-.tab--focus:focus {
-  @extend .tab;
-  background-color:#f3f3f1;
-  cursor: pointer;
-}
-// TABLE
-.table {
-  @include table;
-}
-
-.table--items-position {
-  @include table--items-position;
-}
-
-.table--line-header {
-  @include table--line-header;
-}
-.table--hover:hover {
-  background-color:#f1f3f3;
-  cursor: pointer;
-}
-
-// Button
-.btn {
-  @include btn;
-}
-.btn--dark-grey {
-  background-color: $dark-grey;
-}
-.btn--grey {
-  background-color: $grey;
-}
-.btn--dark-orange {
-  background-color: $dark-orange;
-}
-.btn--orange {
-  background-color: $orange;
-}
-.btn-disabled {
-  @include btn-disabled;
-}
-.fa-circle {
-  @include fa-circle;
-}
 .icon-links::before{
   color:$white;
   margin-left:10px;
   margin-right:10px;
 }
 
-// LIST WITH ONE DIGIT
-.list--one-digit {
-  @include list--one-digit;
-}
-.list--header {
-  @include section-header;
-}
-.list--digit {
-  @include list--digit;
-}
 
-// DATE
-input {
-  @include date--period--container;
-  border:0;
-}
-.date--period--container {
-  @include date--period--container;
-}
-.date--period-from {
-  @include date--period--date-from;
-  @include section-text;
-  @include flex-center;
-}
-.date--period--date-to{
-  @include date--period--date-to;
-  @include section-text;
-  @include flex-center;
-}
-.icon-calendar:before  {
-  color:$light-grey;
-  &:hover {
-    color:$dark-grey;
-  }
-}
 //////////////////////////////// poprawic taby - bordery
 ////////////////////
-
-
-// NAVBAR
-.nav--container {
-  @include nav--container;
-}
-.nav--exit {
-  @include nav--exit;
-}
-.nav--profile {
-  @include nav--profile;
-}
-.nav--notification {
-  @include nav--notification;
-}
-
-.nav--wallet {
-  @include nav--wallet;
-}
-
-// NAV ICONS
-.icon-quit{
-  width:20px;
-  height:20px;
-  color:$dark-grey;
-}
-
-.icon-personaldata {
-  margin-right:15px;
-  color:$dark-grey;
-}
-
-.icon-notification {
-  display:flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  color:$dark-grey;
-}
-.icon-arrow-down-small {
-  color:$dark-grey;
-  margin-left:10px;
-}
-.icon-wallet {
-  color:$dark-grey;
-  margin-right:10px;
-}
-.nav--notification-circle {
-  @include nav--notification-circle;
-}

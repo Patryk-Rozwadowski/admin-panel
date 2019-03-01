@@ -1,11 +1,5 @@
-//  MIXINS
 @mixin flex-center {
   display:flex;
   justify-content: center;
   align-items: center;
-}
-
-@mixin row {
-  display:flex;
-  flex-direction: row;
 }
