@@ -30,7 +30,15 @@ $section-text-color: #5d5d5d;
   font-size:14px;
   color: $section-text-color;
 }
-
+.page-header {
+  @include page-header;
+}
+.section-header {
+  @include section-header;
+}
+.section-text {
+  @include section-header;
+}
 /* LINKS */
 .large-link {
   font-family: 'Roboto', sans-serif;
