@@ -6,3 +6,22 @@
   top:0;
   left:0;
 }
+
+.sidebar--brand {
+  width:50%;
+  height:60px;
+  @include flex-center;
+  text-align: center;
+}
+
+.sidebar--brand-title {
+  text-align: center;
+  @include page-header;
+  color: $white;
+  margin-left:50px;
+}
+
+.sidebar--menu {
+  margin-top:20px;
+
+}
