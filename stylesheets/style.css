@@ -1,3 +1,5 @@
+.flex-center { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+
 /* Colors */
 /* Font sizes */
 /* Fonts */
@@ -344,6 +346,10 @@ template { display: none; }
 [class*="sidebar--menu-items"] [class*="icon"] { color: #979797; margin-left: 30px; padding: 0 10px; margin-right: 0; }
 
 [class*="sidebar--menu-items"] .icon-links::before { margin: 0; color: #979797; }
+
+.yourmanager-container { width: 100%; }
+
+.sidebar--seperator { border: 1px solid #333333; height: 1px; width: 100%; }
 
 body { position: relative; background-color: #e3e3e3; }
 

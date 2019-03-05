@@ -54,8 +54,7 @@
     @include small-link;
     color: $dark-grey;
   }
-
-  // ICONS
+    // ICONS
   [class*="icon"]  {
     color:$dark-grey;
     margin-left: 30px;
@@ -66,4 +65,16 @@
     margin:0;
     color:$dark-grey;
   }
+}
+
+// YOUR MANAGER
+.yourmanager-container {
+  width:100%;
+}
+
+  // SIDEBAR SEPERATOR
+.sidebar--seperator {
+  border:1px solid $sidebar-seperator-color;
+  height:1px;
+  width:100%;
 }
