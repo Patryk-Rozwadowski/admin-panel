@@ -4,6 +4,7 @@ $dark-grey: #979797;
 $black: #191919;
 $light-black: #282828;
 $light-grey: #e3e3e3;
+$verylight-grey: #282828;
 $grey: #bababa;
 $dark-orange: #f58220;
 $orange: #ffa200;
@@ -53,7 +54,7 @@ $section-text-color: #5d5d5d;
   }
 }
 
-.small-link {
+@mixin small-link {
   @extend .large-link;
   font-size: 13px;
 }

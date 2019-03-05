@@ -8,11 +8,9 @@
 .section-text { font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 16px; color: #a6a6a6; }
 
 /* LINKS */
-.large-link, .small-link { font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 16px; color: #56819f; text-decoration: none; }
+.large-link, [class*="sidebar--menu-items"] .sidebar--menu-link { font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 16px; color: #56819f; text-decoration: none; }
 
-.large-link:hover, .small-link:hover { color: #ffa200; }
-
-.small-link { font-size: 13px; }
+.large-link:hover, [class*="sidebar--menu-items"] .sidebar--menu-link:hover { color: #ffa200; }
 
 [class*="link"]:hover { color: #ffa200; }
 
@@ -331,7 +329,21 @@ template { display: none; }
 
 .sidebar--brand-title { text-align: center; font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 16px; color: #a6a6a6; color: #fff; margin-left: 50px; }
 
-.sidebar--menu { margin-top: 20px; }
+.sidebar--menu { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; -ms-flex-direction: column; flex-direction: column; }
+
+[class*="sidebar--menu-items"] { width: 100%; margin-bottom: 10px; height: 45px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; text-align: left; }
+
+[class*="sidebar--menu-items"]:hover { cursor: pointer; background-color: #282828; border-left: 5px solid #f58220; color: #fff; }
+
+[class*="sidebar--menu-items"]:hover .sidebar--menu-items { border-left: 5px solid #f58220; width: 50%; }
+
+[class*="sidebar--menu-items"]:hover .sidebar--menu-link, [class*="sidebar--menu-items"]:hover [class*="icon"], [class*="sidebar--menu-items"]:hover .icon-links::before { color: #fff; }
+
+[class*="sidebar--menu-items"] .sidebar--menu-link { font-size: 13px; color: #979797; }
+
+[class*="sidebar--menu-items"] [class*="icon"] { color: #979797; margin-left: 30px; padding: 0 10px; margin-right: 0; }
+
+[class*="sidebar--menu-items"] .icon-links::before { margin: 0; color: #979797; }
 
 body { position: relative; background-color: #e3e3e3; }
 
