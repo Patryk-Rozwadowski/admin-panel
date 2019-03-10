@@ -8,14 +8,15 @@ main {
   top:60px;
 }
 
+
+
 // MAIN
-@mixin container {
-  max-width:1056px;
+.container {
+  width:calc(100vw - 210px) ;
   background-color:$white;
   padding-left: 15px;
   padding-right: 15px;
-}
+  margin-left: 200px;
+  margin-top:15px;
 
-.container {
-  @include container;
 }

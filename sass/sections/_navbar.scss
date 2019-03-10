@@ -17,6 +17,12 @@
   width:60px;
   height: 60px;
   border-left:1px solid $light-grey;
+
+  .icon-quit {
+    width:20px;
+    height:20px;
+    color:$dark-grey;
+  }
 }
 
 .nav--profile {
@@ -25,6 +31,11 @@
   position:absolute;
   right:60px;
   height:60px;
+
+  .icon-personaldata {
+    margin-right:15px;
+    color:$dark-grey;
+  }
 }
 
 .nav--notification {
@@ -33,15 +44,22 @@
   border-left:1px solid $light-grey;
   position:absolute;
   right:235px;
-}
 
-.nav--notification-circle {
-  width:8px;
-  height:8px;
-  border-radius:50%;
-  margin-left:-7px;
-  margin-top:-12px;
-  background-color:$dark-orange;
+  .icon-notification {
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color:$dark-grey;
+
+    .nav--notification-circle {
+      width:8px;
+      height:8px;
+      border-radius:50%;
+      margin-top:-2px;
+      margin-left:-7px;
+      background-color:$dark-orange;
+    }
+  }
 }
 
 .nav--wallet {
@@ -50,30 +68,13 @@
   border-left:1px solid $light-grey;
   position:absolute;
   right:285px;
-}
 
-.icon-quit{
-  width:20px;
-  height:20px;
-  color:$dark-grey;
-}
-
-.icon-personaldata {
-  margin-right:15px;
-  color:$dark-grey;
-}
-
-.icon-notification {
-  display:flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  color:$dark-grey;
-}
-.icon-arrow-down-small {
-  color:$dark-grey;
-  margin-left:10px;
-}
-.icon-wallet {
-  color:$dark-grey;
-  margin-right:10px;
+  .icon-arrow-down-small {
+    color:$dark-grey;
+      margin-right:5px;
+  }
+  .icon-wallet {
+    color:$dark-grey;
+    margin-right:-5px;
+  }
 }

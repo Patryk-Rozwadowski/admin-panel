@@ -3,16 +3,18 @@
 /* Colors */
 /* Font sizes */
 /* Fonts */
-.page-header { font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 16px; color: #a6a6a6; }
+.page-header { font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 16px; color: #a6a6a6; padding: 20px; }
 
 .section-header { font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 16px; color: #a6a6a6; }
 
 .section-text { font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 16px; color: #a6a6a6; }
 
 /* LINKS */
-.large-link, [class*="sidebar--menu-items"] .sidebar--menu-link { font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 16px; color: #56819f; text-decoration: none; }
+.large-link, .small-link, [class*="sidebar--menu-items"] .sidebar--menu-link { font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 16px; color: #56819f; text-decoration: none; }
 
-.large-link:hover, [class*="sidebar--menu-items"] .sidebar--menu-link:hover { color: #ffa200; }
+.large-link:hover, .small-link:hover, [class*="sidebar--menu-items"] .sidebar--menu-link:hover { color: #ffa200; }
+
+.small-link { font-size: 13px; }
 
 [class*="link"]:hover { color: #ffa200; }
 
@@ -50,17 +52,19 @@
 
 .list--digit { font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 14px; color: #5d5d5d; width: 150px; display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; }
 
-.date--period--container, input { width: 325px; height: 40px; border: 1px solid #e3e3e3; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
+.general--statistic { height: 110px; border-top: 1px solid #e3e3e3; border-bottom: 1px solid #e3e3e3; }
 
-.date--period--date-from { width: 33%; height: 28px; border-right: 1px solid #e3e3e3; margin-left: 30px; padding-right: 20px; font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 14px; color: #5d5d5d; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+.date--period--container { width: 305px; height: 40px; border: 1px solid #e3e3e3; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
 
-.date--period--date-to { width: 33%; height: 28px; margin-left: 10px; padding-right: 20px; font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 14px; color: #5d5d5d; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+.date--period-from { height: 28px; box-shadow: 1px 0px 0px 0px #e3e3e3; padding-right: 10px; font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 14px; color: #5d5d5d; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
-.icon-calendar:before { color: #e3e3e3; }
+.date--period--date-to { height: 28px; margin-left: 10px; font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 14px; color: #5d5d5d; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+
+.icon-calendar:before { color: #979797; padding-left: 20px; }
 
 .icon-calendar:before:hover { color: #979797; }
 
-input { border: 0; }
+input[type="date"] { border: 0; }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -307,29 +311,29 @@ template { display: none; }
 
 .nav--exit { position: absolute; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; right: 0; top: 0; width: 60px; height: 60px; border-left: 1px solid #e3e3e3; }
 
+.nav--exit .icon-quit { width: 20px; height: 20px; color: #979797; }
+
 .nav--profile { width: 175px; border-left: 1px solid #e3e3e3; position: absolute; right: 60px; height: 60px; }
+
+.nav--profile .icon-personaldata { margin-right: 15px; color: #979797; }
 
 .nav--notification { width: 60px; height: 60px; border-left: 1px solid #e3e3e3; position: absolute; right: 235px; }
 
-.nav--notification-circle { width: 8px; height: 8px; border-radius: 50%; margin-left: -7px; margin-top: -12px; background-color: #f58220; }
+.nav--notification .icon-notification { display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-align: start; align-items: flex-start; color: #979797; }
+
+.nav--notification .icon-notification .nav--notification-circle { width: 8px; height: 8px; border-radius: 50%; margin-top: -2px; margin-left: -7px; background-color: #f58220; }
 
 .nav--wallet { width: 185px; height: 60px; border-left: 1px solid #e3e3e3; position: absolute; right: 285px; }
 
-.icon-quit { width: 20px; height: 20px; color: #979797; }
+.nav--wallet .icon-arrow-down-small { color: #979797; margin-right: 5px; }
 
-.icon-personaldata { margin-right: 15px; color: #979797; }
-
-.icon-notification { display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; -ms-flex-align: start; align-items: flex-start; color: #979797; }
-
-.icon-arrow-down-small { color: #979797; margin-left: 10px; }
-
-.icon-wallet { color: #979797; margin-right: 10px; }
+.nav--wallet .icon-wallet { color: #979797; margin-right: -5px; }
 
 .sidebar--container { width: 190px; height: 100vh; background-color: #191919; position: fixed; top: 0; left: 0; }
 
 .sidebar--brand { width: 50%; height: 60px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; text-align: center; }
 
-.sidebar--brand-title { text-align: center; font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 16px; color: #a6a6a6; color: #fff; margin-left: 50px; }
+.sidebar--brand-title { text-align: center; font-family: 'Roboto', sans-serif; font-weight: 500; font-size: 16px; color: #a6a6a6; padding: 20px; color: #fff; margin-left: 50px; }
 
 .sidebar--menu { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; -ms-flex-direction: column; flex-direction: column; }
 
@@ -355,7 +359,7 @@ body { position: relative; background-color: #e3e3e3; }
 
 main { position: absolute; top: 60px; }
 
-.container { max-width: 1056px; background-color: #fff; padding-left: 15px; padding-right: 15px; }
+.container { width: calc(100vw - 210px); background-color: #fff; padding-left: 15px; padding-right: 15px; margin-left: 200px; margin-top: 15px; }
 
 .width-100 { width: 100%; }
 
@@ -364,3 +368,5 @@ main { position: absolute; top: 60px; }
 .row { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; }
 
 .icon-links::before { color: #fff; margin-left: 10px; margin-right: 10px; }
+
+a { text-decoration: none; }

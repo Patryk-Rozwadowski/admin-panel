@@ -21,6 +21,7 @@ $section-text-color: #5d5d5d;
   font-weight: 500;
   font-size:16px;
   color: $page-header-color;
+  padding:20px;
 }
 @mixin section-header {
   font-family: 'Roboto', sans-serif;
@@ -44,7 +45,7 @@ $section-text-color: #5d5d5d;
   @include section-header;
 }
 /* LINKS */
-.large-link {
+@mixin large-link {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size:16px;
@@ -59,7 +60,12 @@ $section-text-color: #5d5d5d;
   @extend .large-link;
   font-size: 13px;
 }
-
+.large-link {
+  @include large-link;
+}
+.small-link {
+  @include small-link;
+}
 [class*="link"]:hover {
   color:#ffa200;
 }
@@ -175,39 +181,40 @@ $section-text-color: #5d5d5d;
 }
 
 // DATE PERIOD
+.general--statistic { //DATE PERIOD SECTION
+  height:110px;
+  border-top:1px solid $light-grey;
+  border-bottom:1px solid $light-grey;
+}
 .date--period--container {
-  width:325px;
+  width:305px;
   height:40px;
   border:1px solid $light-grey;
   display:flex;
   align-items: center;
 }
 
-.date--period--date-from {
-  width:33%;
+.date--period-from {
   height:28px;
-  border-right:1px solid $light-grey;
-  margin-left:30px;
-  padding-right:20px;
+  box-shadow: 1px 0px 0px 0px $light-grey;
+  padding-right:10px;
   @include section-text;
   @include flex-center;
 }
 .date--period--date-to {
-  width:33%;
   height:28px;
   margin-left:10px;
-  padding-right:20px;
   @include section-text;
   @include flex-center;
 }
 
 .icon-calendar:before  {
-  color:$light-grey;
+  color:$dark-grey;
+  padding-left:20px;
   &:hover {
     color:$dark-grey;
   }
 }
-input {
-  @extend .date--period--container;
+input[type="date"] {
   border:0;
 }
