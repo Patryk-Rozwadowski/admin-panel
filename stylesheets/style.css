@@ -367,6 +367,8 @@ main { position: absolute; top: 60px; }
 
 .lists--digit-section { height: 160px; }
 
+.lists--digit-section .list--one-digit--container { margin-top: 20px; margin-right: 20px; }
+
 .width-100 { width: 100%; }
 
 .flex-center { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
