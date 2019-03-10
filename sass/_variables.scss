@@ -132,7 +132,10 @@ $section-text-color: #5d5d5d;
   text-align: center;
   cursor: pointer;
 }
-
+.btn-reset {
+  @extend .btn;
+  width:40px;
+}
 .btn--dark-grey {
   background-color: $dark-grey;
 }
@@ -145,7 +148,6 @@ $section-text-color: #5d5d5d;
 .btn--orange {
   background-color: $orange;
 }
-
 .btn-disabled {
   width:203px;
   background-color: $light-grey;
@@ -181,11 +183,6 @@ $section-text-color: #5d5d5d;
 }
 
 // DATE PERIOD
-.general--statistic { //DATE PERIOD SECTION
-  height:110px;
-  border-top:1px solid $light-grey;
-  border-bottom:1px solid $light-grey;
-}
 .date--period--container {
   width:305px;
   height:40px;
