@@ -1,20 +1,18 @@
+@import 'components/colors';
 @import 'mixins';
-@import 'variables';
 @import 'normalize';
 @import 'layout';
 @import 'Glyphter';
+@import 'variables';
 @import 'sections/navbar';
 @import 'sections/sidebar';
 @import 'sections/main';
 @import 'sections/general-statistic';
+@import 'sections/links-section';
 // FLEX CENTER
 
 .width-100 {
   width:100%;
-}
-
-.flex-center {
-  @include flex-center;
 }
 
 .row {
@@ -28,6 +26,14 @@
   margin-right:10px;
 }
 
+.active {
+  background-color:$verylight-grey;
+  border-left:5px solid #f58220;
+
+  .sidebar--menu-link, [class*="icon"], .icon-links::before {
+    color:$white;
+  }
+}
 a {
   text-decoration: none;
 }

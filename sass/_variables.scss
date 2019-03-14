@@ -1,20 +1,3 @@
-/* Colors */
-$white: #fff;
-$dark-grey: #979797;
-$black: #191919;
-$light-black: #282828;
-$light-grey: #e3e3e3;
-$verylight-grey: #f3f3f1;
-$sidebar-seperator-color: #333333;
-$grey: #bababa;
-$dark-orange: #f58220;
-$orange: #ffa200;
-$green: #59b66d;
-$blue: #80bfca;
-/* Font sizes */
-$section-header-color: #a6a6a6;
-$page-header-color: #a6a6a6;
-$section-text-color: #a6a6a6;
 
 /* Fonts */
 @mixin page-header {
@@ -54,12 +37,14 @@ $section-text-color: #a6a6a6;
   text-decoration: none;
   &:hover {
     color:#ffa200;
+    cursor:pointer;
   }
 }
 
 @mixin small-link {
   @extend .large-link;
   font-size: 13px;
+  cursor:pointer;
 }
 .large-link {
   @include large-link;
@@ -75,7 +60,6 @@ $section-text-color: #a6a6a6;
   @include flex-center;
   width:126px;
   height:40px;
-  background-color: $verylight-grey;
   border-radius:4px;
   font-size:16px;
 
@@ -102,21 +86,15 @@ $section-text-color: #a6a6a6;
   background-color:#f3f3f1;
   cursor: pointer;
 }
-.tab--focus:focus {
-  @extend .tab;
-  background-color:#f3f3f1;
-  cursor: pointer;
-}
 
 // TABLE WITH LINK
 .table--link {
   width:366px;
   height:50px;
-  outline:1px solid #e3e3e3;
   display:flex;
   align-items: center;
   &:hover {
-    background-color:#f1f3f3;
+    background-color:$light-grey;
     cursor: pointer;
   }
 }
@@ -130,7 +108,8 @@ $section-text-color: #a6a6a6;
   margin-right:50px;
   width:200px;
   height:50px;
-  @include flex-center;
+  display:flex;
+
 }
 
 // BUTTONS
@@ -151,6 +130,12 @@ $section-text-color: #a6a6a6;
 .btn-reset {
   @extend .btn;
   width:40px;
+
+  .fa-circle {
+    height:16px;
+    border:0;
+  }
+
 }
 .btn--dark-grey {
   background-color: $dark-grey;
@@ -168,10 +153,7 @@ $section-text-color: #a6a6a6;
   width:203px;
   background-color: $light-grey;
 }
-.fa-circle {
-  height:16px;
-  border:0;
-}
+
 
 // LIST WITH ONE DIGIT
 .list--one-digit--container {

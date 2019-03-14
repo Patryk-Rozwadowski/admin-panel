@@ -1,0 +1,9 @@
+.links-section {
+  border-top:1px solid $light-grey;
+  border-bottom:1px solid $light-grey;
+  display:flex;
+  flex-direction: column;
+  .table--link {
+    border-bottom:1px solid $light-grey;
+  }
+}

@@ -39,7 +39,6 @@
     cursor:pointer;
     background-color:$verylight-grey;
     border-left:5px solid #f58220;
-    color: $white;
   }
 
   &:hover .sidebar--menu-items {
@@ -56,6 +55,7 @@
     color: $dark-grey;
   }
     // ICONS
+
   [class*="icon"]  {
     color:$dark-grey;
     margin-left: 30px;
