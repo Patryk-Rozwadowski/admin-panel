@@ -412,3 +412,13 @@ main { position: absolute; top: 60px; }
 .active .sidebar--menu-link, .active [class*="icon"], .active .icon-links::before { color: #fff; }
 
 a { text-decoration: none; }
+
+.overlay { position: fixed; top: 0; left: 0; z-index: 99999999; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; overflow: auto; display: none; }
+
+.overlay.show { display: -ms-flexbox; display: flex; }
+
+.quit-modal-container { max-width: 600px; margin: auto; background-color: #fff; position: relative; display: none; padding: 30px; }
+
+.quit-modal-container.show { display: block; }
+
+.modal .btn-close { position: absolute; top: 0; right: 0; padding: 5px 10px; }
