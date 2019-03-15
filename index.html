@@ -16,12 +16,16 @@
           <span class="icon-quit flex-center"></span>
           <div class="overlay" id="overlay">
             <div class="quit-modal-container" id="quit-modal">
-              <div class="btn-close js--close-modal">x</div>
 
-              <h4>Witaj w modalu!</h4>
-              <p>Lorem ipsum dolor sit amet...</p>
-
-              <button class="js--close-modal">Okay</button>
+              <div class="row">
+                <div class="col-xl-12 quit-modal--question">
+                  <span class="page-header">Do you really want to quit?</span>
+                </div>
+              </div>
+              <div class="row">
+                <button class="btn btn--grey js--close-modal">Cancel</button>
+                <button class="btn btn--orange js--close-modal" id="js--close-modal">Quit</button>
+              </div>
             </div>
           </div>
         </div>
@@ -188,9 +192,7 @@
       <div class="container">
         <!-- LINKS SECTION -->
         <div class="row">
-          <div class="col-12-xl">
-            <h1 class="page-header">LINKS</h1>
-          </div>
+          <h1 class="page-header">LINKS</h1>
         </div>
         <section class="links-section flex-center">
           <button class="btn btn--orange links-section--button-add">

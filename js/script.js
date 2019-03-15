@@ -12,8 +12,14 @@ function openModal() {
 }
 
 function closeModal() {
-  document.getElementById('overlay').classList.remove('show')
+  document.querySelector('.overlay').classList.remove('show');
+  document.querySelector('#quit-modal').classList.remove('show');
 }
+document.querySelector("#js--close-modal").addEventListener('click', function(e){
+  closeModal();
+});
+
+
 
 /*
 
@@ -34,5 +40,13 @@ document.addEventListener('keyup', function(e) {
   if(e.keyCode === 27) {
     closeModal()
   }
+
 })
+function closeModal() {
+  document.getElementById('overlay').classList.remove('show');
+  document.getElementById('#quit-modal').classList.remove('show')
+}
+document.querySelector(".js--close-modal").addEventListener('click', function(){
+  closeModal();
+});
 */

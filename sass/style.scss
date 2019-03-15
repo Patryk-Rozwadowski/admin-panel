@@ -57,17 +57,29 @@ a {
 }
 
 .quit-modal-container {
-  max-width:600px;
+  width:400px;
   margin:auto;
   background-color:#fff;
   position:relative;
   display:none;
   padding:30px;
+  @include flex-center;
 }
-.quit-modal-container.show {
+.quit-modal-container .row:last-child {
+  justify-content: flex-end;
+  margin-top:20px;
+
+  .btn {
+    margin-right:5px;
+  }
+}
+.quit-modal--question {
+  border-bottom:1px solid $light-grey;
+  padding-bottom:20px;
+}
+#quit-modal.show {
   display:block;
 }
-
 .modal .btn-close {
   position: absolute;
   top: 0;
