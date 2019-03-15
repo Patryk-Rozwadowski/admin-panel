@@ -281,6 +281,8 @@ template { display: none; }
 
 .btn, .btn-reset { width: 93px; height: 40px; border-radius: 3px; color: #fff; font-family: 'Roboto', sans-serif; font-weight: 300; padding: 10px; border: 0; font-size: 18px; box-shadow: none; text-align: center; cursor: pointer; }
 
+.btn .section-text, .btn-reset .section-text { color: #fff; }
+
 .btn-reset { width: 40px; }
 
 .btn-reset .fa-circle { height: 16px; border: 0; }
@@ -371,7 +373,7 @@ body { position: relative; background-color: #e3e3e3; }
 
 main { position: absolute; top: 60px; }
 
-.container { width: calc(100vw - 210px); background-color: #fff; padding-left: 15px; padding-right: 15px; margin-left: 200px; margin-top: 15px; }
+.container { width: calc(100vw - 210px); background-color: #fff; padding-right: 15px; margin-left: 200px; margin-top: 15px; }
 
 .general-statistic-section .btn-reset { margin-left: 15px; }
 
@@ -388,6 +390,16 @@ main { position: absolute; top: 60px; }
 .links-section { border-top: 1px solid #e3e3e3; border-bottom: 1px solid #e3e3e3; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; }
 
 .links-section .table--link { border-bottom: 1px solid #e3e3e3; }
+
+.links-section .table--link:hover .icon-links, .links-section .table--link:hover .icon-trash { visibility: visible; }
+
+.links-section .table--link .icon-links, .links-section .table--link .icon-trash { visibility: hidden; }
+
+.links-section .table--link .small-link { margin-right: 50px; }
+
+.links-section .table--link { width: 500px; }
+
+.links-section--button-add { margin: 20px; }
 
 .width-100 { width: 100%; }
 

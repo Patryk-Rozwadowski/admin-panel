@@ -3,7 +3,25 @@
   border-bottom:1px solid $light-grey;
   display:flex;
   flex-direction: column;
+
   .table--link {
     border-bottom:1px solid $light-grey;
+    &:hover .icon-links,
+    &:hover .icon-trash {
+      visibility: visible;
+    }
+    .icon-links,
+    .icon-trash {
+      visibility: hidden;
+    }
+    .small-link {
+      margin-right:50px;
+    }
   }
+  .table--link {
+    width:500px;
+  }
+}
+.links-section--button-add {
+  margin:20px;
 }

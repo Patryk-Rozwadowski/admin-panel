@@ -126,6 +126,10 @@
   box-shadow: none;
   text-align: center;
   cursor: pointer;
+
+  .section-text {
+    color:$white;
+  }
 }
 .btn-reset {
   @extend .btn;
