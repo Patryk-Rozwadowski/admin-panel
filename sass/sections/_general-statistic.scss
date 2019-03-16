@@ -23,10 +23,16 @@
 }
 
 .earnings-chart-section {
-  height:150px;
   width:685px;
-  margin:150px auto;
+  margin:20px auto;
+  height:100%;
 
+.chart--container {
+  position:relative;
+  margin:60px auto;
+  width:40vw;
+  height:60vh;
+}
   .tab {
     margin:20px 50px;
   }

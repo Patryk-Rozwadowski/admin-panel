@@ -19,6 +19,13 @@
   height: 60px;
   border-left:1px solid $light-grey;
 
+  &:hover {
+    cursor:pointer;
+  }
+
+  &:hover .icon-quit {
+    color:$orange;
+  }
   .icon-quit {
     width:20px;
     height:20px;

@@ -323,6 +323,10 @@ input[type="date"] { border: 0; }
 
 .nav--exit { position: absolute; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; right: 0; top: 0; width: 60px; height: 60px; border-left: 1px solid #e3e3e3; }
 
+.nav--exit:hover { cursor: pointer; }
+
+.nav--exit:hover .icon-quit { color: #ffa200; }
+
 .nav--exit .icon-quit { width: 20px; height: 20px; color: #979797; }
 
 .nav--profile { width: 175px; border-left: 1px solid #e3e3e3; position: absolute; right: 60px; height: 60px; }
@@ -381,7 +385,9 @@ main { position: absolute; top: 60px; }
 
 .lists--digit-section .list--one-digit--container { margin-top: 20px; margin-right: 20px; }
 
-.earnings-chart-section { height: 150px; width: 685px; margin: 150px auto; }
+.earnings-chart-section { width: 685px; margin: 20px auto; height: 100%; }
+
+.earnings-chart-section .chart--container { position: relative; margin: 60px auto; width: 40vw; height: 60vh; }
 
 .earnings-chart-section .tab { margin: 20px 50px; }
 
