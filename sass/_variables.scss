@@ -183,11 +183,12 @@
 
 // DATE PERIOD
 .date--period--container {
-  width:305px;
+  width:100%;
   height:40px;
   border:1px solid $light-grey;
   display:flex;
   align-items: center;
+  padding:0 20px;
 }
 
 .date--period-from {

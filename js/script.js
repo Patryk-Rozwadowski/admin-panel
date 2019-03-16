@@ -17,15 +17,14 @@ function openModal() {
 };
 // CLOSE MODAL FUNCTION
 function closeModal() {
-  overlay.classList.remove('show')
-  quitModalContainer.classList.remove('show')
+  overlay.classList.remove('show');
+  quitModalContainer.classList.remove('show');
 }
 
 // CLICK OUTSIDE CLOSE
 overlay.addEventListener('click', function(e) {
   if(e.target === this) {
-    overlay.classList.remove('show');
-    quitModalContainer.classList.remove('show');
+    overlay.remove();
   }
 })
 // ESC QUIT
