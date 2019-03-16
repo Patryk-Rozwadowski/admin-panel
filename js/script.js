@@ -1,26 +1,40 @@
 'use strict';
+// OVERLAY
+var overlay = document.querySelector('.overlay-bg');
 
+// QUIT MODAL container
+var quitModalContainer = document.querySelector('.quit-modal-container');
 
+// QUIT MODAL OPEN
 document.querySelector(".nav--exit").addEventListener('click', function(){
   openModal();
 });
 
-
+// OPEN MODAL FUNCTION
 function openModal() {
-  document.querySelector('.overlay').classList.add('show');
-  document.querySelector('#quit-modal').classList.add('show');
-}
-
+  overlay.classList.add('show');
+  quitModalContainer.classList.add('show');
+};
+// CLOSE MODAL FUNCTION
 function closeModal() {
-  document.querySelector('.overlay').classList.remove('show');
-  document.querySelector('#quit-modal').classList.remove('show');
+  overlay.classList.remove('show')
+  quitModalContainer.classList.remove('show')
 }
-document.querySelector("#js--close-modal").addEventListener('click', function(e){
-  closeModal();
-});
 
+// CLICK OUTSIDE CLOSE
+overlay.addEventListener('click', function(e) {
+  if(e.target === this) {
+    overlay.classList.remove('show');
+    quitModalContainer.classList.remove('show');
+  }
+})
+// ESC QUIT
+document.addEventListener('keyup', function(e) {
+  if(e.keyCode === 27) {
+    closeModal()
+  }
 
-
+})
 /*
 
 document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {

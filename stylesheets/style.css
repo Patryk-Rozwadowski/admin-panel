@@ -413,18 +413,18 @@ main { position: absolute; top: 60px; }
 
 a { text-decoration: none; }
 
-.overlay { position: fixed; top: 0; left: 0; z-index: 99999999; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; overflow: auto; display: none; }
+.overlay-bg { position: fixed; top: 0; left: 0; z-index: 99999999; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; overflow: auto; display: none; }
 
-.overlay.show { display: -ms-flexbox; display: flex; }
+.overlay-bg.show { display: -ms-flexbox; display: flex; }
 
 .quit-modal-container { width: 400px; margin: auto; background-color: #fff; position: relative; display: none; padding: 30px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+
+.quit-modal-container.show { display: block; }
 
 .quit-modal-container .row:last-child { -ms-flex-pack: end; justify-content: flex-end; margin-top: 20px; }
 
 .quit-modal-container .row:last-child .btn, .quit-modal-container .row:last-child .btn-reset { margin-right: 5px; }
 
 .quit-modal--question { border-bottom: 1px solid #e3e3e3; padding-bottom: 20px; }
-
-#quit-modal.show { display: block; }
 
 .modal .btn-close { position: absolute; top: 0; right: 0; padding: 5px 10px; }

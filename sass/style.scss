@@ -40,7 +40,7 @@ a {
 
 
 // POPUPS
-.overlay {
+.overlay-bg {
   position:fixed;
   top:0;
   left:0;
@@ -52,7 +52,7 @@ a {
   overflow:auto;
   display:none;
 }
-.overlay.show {
+.overlay-bg.show {
   display:flex;
 }
 
@@ -65,6 +65,9 @@ a {
   padding:30px;
   @include flex-center;
 }
+.quit-modal-container.show {
+  display:block;
+}
 .quit-modal-container .row:last-child {
   justify-content: flex-end;
   margin-top:20px;
@@ -76,9 +79,6 @@ a {
 .quit-modal--question {
   border-bottom:1px solid $light-grey;
   padding-bottom:20px;
-}
-#quit-modal.show {
-  display:block;
 }
 .modal .btn-close {
   position: absolute;
