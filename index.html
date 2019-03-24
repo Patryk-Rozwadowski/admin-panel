@@ -16,7 +16,7 @@
           <span class="icon-quit flex-center"></span>
 
           <!-- modal exit -->
-          <div class="overlay-bg" id="overlay">
+          <div class="overlay-bg" id="overlay-quit">
             <div class="quit-modal-container">
 
               <div class="row">
@@ -30,81 +30,110 @@
               </div>
             </div>
           </div>
+
+
         </div>
         <div class="nav--profile flex-center">
           <span class="icon-personaldata"></span>
-          <p class="small-link">Nazwa profilu</p>
-        </div>
-        <div class="nav--notification flex-center">
-          <span class="icon-notification flex-center"><span class="nav--notification-circle"></span> </span>
-        </div>
-        <div class="nav--wallet flex-center">
-          <span class="icon-wallet"></span>
-          <span class="page-header"> $1.500.00 </span>
-          <span class="icon-arrow-down-small"></span>
-        </div>
-      </nav>
-      <nav class="sidebar--container">
-        <div class="sidebar--brand">
-          <span class="sidebar--brand-title">Account Manager</span>
-        </div>
-        <!-- SIDEBAR MENU ITEMS -->
-          <ul class="sidebar--menu">
+          <p class="small-link">Log in</p>
 
-            <li class="sidebar--menu-items-general active">
-              <span class="icon-general"></span>
-              <a href="#" class="sidebar--menu-link">General</a>
-            </li>
-
-            <li class="sidebar--menu-items-details">
-              <span class="icon-details"></span>
-              <a href="#" class="sidebar--menu-link">Details</a>
-            </li>
-
-            <li class="sidebar--menu-items-links">
-              <span class="icon-links"></span>
-              <a href="#" class="sidebar--menu-link">Links</a>
-            </li>
-
-            <li class="sidebar--menu-items-banners">
-              <span class="icon-banners"></span>
-              <a href="#" class="sidebar--menu-link">Banners</a>
-            </li>
-
-            <li class="sidebar--menu-items-personaldata">
-              <span class="icon-personaldata"></span>
-              <a href="#" class="sidebar--menu-link">Personal data</a>
-            </li>
-
-            <li class="sidebar--menu-items-payout">
-              <span class="icon-payout"></span>
-              <a href="#" class="sidebar--menu-link">Payout</a>
-            </li>
-
-            <li class="sidebar--menu-items-postback">
-              <span class="icon-postback"></span>
-              <a href="#" class="sidebar--menu-link">Postback</a>
-            </li>
-
-            <li class="sidebar--seperator"></li>
-          </ul>
-
-          <!-- YOUR MANAGER -->
-          <div class="yourmanager-container">
-
-            <div class="row flex-center">
-              <h1 class="page-header">Your manager</h1>
-            </div>
-
-            <div class="row">
-
+          <!-- LOGIN MODAL -->
+          <div class="overlay-bg" id="overlay-login">
+            <div class="login-modal-container">
+              <div class="row">
+                <span class="page-header">Login</span>
+              </div>
+              <form class="login-container">
+                <div class="row flex-center">
+                  <input type="mail" class="login section-text" name="login" attribute="required" placeholder="E-mail"></input>
+                </div>
+                <div class="row flex-center">
+                  <input type="password" class="login section-text" attribute="required" placeholder="Login"></input>
+                </div>
+              </form>
+              <div class="row flex-end">
+                <input type="submit" value="Login" action="login-btn" class="btn btn--orange"></input>
+                <input type="submit" value="Register" action="login-btn" class="btn btn--dark-orange"></input>
+              </div>
+              <div class="row flex-end">
+                <span class="small-link">Password recovery</span>
+              </div>
             </div>
           </div>
         </div>
+
+        </div>
+        <div class="nav--notification flex-center">
+          <span class="icon-notification flex-center">
+            <span class="nav--notification-circle"></span>
+          </span>
+        </div>
+        <ul class="wallet--container">
+          <li class="wallet-items-first flex-center">
+            <span class="icon-wallet"></span>
+            <span class="page-header"> $1.500.00 </span>
+            <span class="icon-arrow-down-small"></span>
+          </li>
+        </ul>
+        <!-- SIDEBAR MENU ITEMS -->
+          <ul>
+            <li class="sidebar--brand" id="hamburger">
+              <span class="sidebar--brand-title">Account Manager</span>
+              <i class="fas fa-align-justify"></i>
+            </li>
+              <ul class="sidebar--menu">
+                <li class="sidebar--menu-items-general active">
+                  <span class="icon-general"></span>
+                  <a href="#" class="sidebar--menu-link">General</a>
+                </li>
+
+                <li class="sidebar--menu-items-details">
+                  <span class="icon-details"></span>
+                  <a href="#" class="sidebar--menu-link">Details</a>
+                </li>
+
+                <li class="sidebar--menu-items-links">
+                  <span class="icon-links"></span>
+                  <a href="#" class="sidebar--menu-link">Links</a>
+                </li>
+
+                <li class="sidebar--menu-items-banners">
+                  <span class="icon-banners"></span>
+                  <a href="#" class="sidebar--menu-link">Banners</a>
+                </li>
+
+                <li class="sidebar--menu-items-personaldata">
+                  <span class="icon-personaldata"></span>
+                  <a href="#" class="sidebar--menu-link">Personal data</a>
+                </li>
+
+                <li class="sidebar--menu-items-payout">
+                  <span class="icon-payout"></span>
+                  <a href="#" class="sidebar--menu-link">Payout</a>
+                </li>
+
+                <li class="sidebar--menu-items-postback">
+                  <span class="icon-postback"></span>
+                  <a href="#" class="sidebar--menu-link">Postback</a>
+                </li>
+                <li class="sidebar--seperator"></li>
+                <!-- YOUR MANAGER -->
+                <ul class=" yourmanager-container">
+                  <li class="row flex-center">
+                    <h1 class="page-header">Your manager</h1>
+                  </li>
+
+                  <li class="row">
+                    <img src="images/your-manager.jpg" alt="your-manager" class="manager">
+                      <i class="online-icon"></i>
+                      <span class="small-link">John Smith</span>
+                  </li>
+                </ul>
+              </ul>
+          </ul>
       </nav>
     </header>
     <main>
-
       <div class="container">
 
         <!-- GENERAL STATISTIC SECTION -->

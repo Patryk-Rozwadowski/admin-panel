@@ -1,0 +1,14 @@
+
+// media
+
+@media (max-width:1020px) {
+
+  .container {
+    width:100%;
+    margin:15px auto;
+
+    &:first-child {
+      margin:65px auto 15px;
+    }
+  }
+}

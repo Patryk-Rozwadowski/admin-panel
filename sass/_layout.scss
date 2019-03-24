@@ -15,7 +15,14 @@
   width:100%;
 }
 
-
+.flex-end {
+  display:flex;
+  justify-content:flex-end;
+  align-content: center;
+}
+.flex-center {
+  @include flex-center;
+}
 // GRID
 @mixin grid($prefix) {
   @for $i from 1 through 12 {

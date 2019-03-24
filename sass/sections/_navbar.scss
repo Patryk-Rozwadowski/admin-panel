@@ -6,7 +6,8 @@
   border-bottom:1px solid $light-grey;
   background-color:$white;
   position: fixed;
-  z-index:9999999999;
+  top:0;
+  z-index:2;
 }
 
 .nav--exit {
@@ -40,9 +41,17 @@
   right:60px;
   height:60px;
 
+
+  &:hover {
+    cursor:pointer;
+    background-color:$light-grey;
+  }
   .icon-personaldata {
-    margin-right:15px;
     color:$dark-grey;
+    margin-right:20px;
+  }
+  .small-link {
+    margin:0;
   }
 }
 
@@ -69,14 +78,26 @@
     }
   }
 }
-
-.nav--wallet {
+ .wallet--container {
+  position:relative;
   width:185px;
   height:60px;
   border-left:1px solid $light-grey;
   position:absolute;
   right:285px;
 
+  [class*="icon"] {
+    color:$dark-grey;
+  }
+}
+/*
+.wallet-items-first {
+
+  &:hover .nav--wallet-second {
+    display:block;
+    position:absolute;
+    bottom:0;
+  }
   .icon-arrow-down-small {
     color:$dark-grey;
       margin-right:5px;
@@ -86,3 +107,24 @@
     margin-right:-5px;
   }
 }
+.wallet--items{
+  background-color:$white;
+  border-bottom:1px solid $light-grey;
+
+  &:first-child {
+    border-right:1px solid $light-grey;
+  }
+}
+
+.nav--wallet-second {
+  position:absolute;
+  display:none;
+  height:60px;
+
+  &:hover li {
+    height:60px;
+    background-color:$white;
+    width:180px;
+  }
+}
+*/

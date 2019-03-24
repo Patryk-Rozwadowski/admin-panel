@@ -1,40 +1,71 @@
 'use strict';
-// OVERLAY
-var overlay = document.querySelector('.overlay-bg');
 
+// HAMBURGER
+var mobileMenu = document.getElementById('hamburger');
+
+// OVERLAY
+var overlayQuit = document.getElementById('overlay-quit');
+var overlayLogin = document.getElementById('overlay-login');
 // QUIT MODAL container
 var quitModalContainer = document.querySelector('.quit-modal-container');
-
+var loginModalContainer = document.querySelector('.login-modal-container');
 // QUIT MODAL OPEN
 document.querySelector(".nav--exit").addEventListener('click', function(){
-  openModal();
+  openModalQuit();
 });
-
+// LOGIN
+document.querySelector('.nav--profile').addEventListener('click', function(){
+  openModalLogin();
+});
 // OPEN MODAL FUNCTION
-function openModal() {
-  overlay.classList.add('show');
+function openModalQuit() {
+  overlayQuit.classList.add('show');
   quitModalContainer.classList.add('show');
+};
+function openModalLogin() {
+  overlayLogin.classList.add('show');
+  loginModalContainer.classList.add('show');
 };
 // CLOSE MODAL FUNCTION
 function closeModal() {
-  overlay.classList.remove('show');
+  overlayQuit.classList.remove('show');
+  overlayLogin.classList.remove('show');
+
   quitModalContainer.classList.remove('show');
-}
+  loginModalContainer.classList.remove('show');
+};
 
 // CLICK OUTSIDE CLOSE
-overlay.addEventListener('click', function(e) {
-  if(e.target === this) {
-    overlay.style.display = 'none'; // nie chce zadziałać overlay.classList.remove('show')
+overlayQuit.addEventListener('click', function(event) {
+  if(event.target === this) {
+    event.stopPropagation();
+    closeModal();
   }
-})
+});
+overlayLogin.addEventListener('click', function(event) {
+  if(event.target === this) {
+    event.stopPropagation();
+    closeModal();
+  }
+});
 // ESC QUIT
 document.addEventListener('keyup', function(e) {
   if(e.keyCode === 27) {
-    closeModal()
+    closeModal();
   }
 
 })
 
+/////////////////// MENU
+// HAMBURGER MENU
+function toggleMenu(visible) {
+  document.querySelector('.sidebar--menu').classList.toggle('show', visible);
+}
+
+mobileMenu.addEventListener('click', function(event){
+  event.stopPropagation();
+  toggleMenu();
+});
 // WYKRES
 
 var ctx = document.getElementById('myChart').getContext('2d');

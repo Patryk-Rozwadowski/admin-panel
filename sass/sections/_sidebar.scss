@@ -1,34 +1,53 @@
-.sidebar--container {
-  width:190px;
-  height:100vh;
+
+.sidebar--brand {
+    width:190px;
+  height:60px;
+  @include flex-center;
+  text-align: center;
   background-color:$black;
   position:fixed;
   top:0;
   left:0;
-  z-index:9999999999;
-}
+  z-index:3;
 
-.sidebar--brand {
-  width:50%;
-  height:60px;
-  @include flex-center;
-  text-align: center;
-}
 
-.sidebar--brand-title {
-  text-align: center;
-  @include page-header;
-  color: $white;
-  margin-left:50px;
+  .sidebar--brand-title {
+    text-align: center;
+    @include page-header;
+    color: $white;
+    margin-left:-10px;
+    padding-right:15px;
+    &:hover {
+      cursor:pointer;
+    }
+  }
+
+  .fa-align-justify {
+    color:$white;
+
+    &:hover {
+      cursor:pointer;
+    }
+  }
 }
 
 .sidebar--menu {
-  @include flex-center;
+  display:none;
+  opacity:0;
+  transition:all 500ms;
+  position:fixed;
   flex-direction: column;
+  top:60px;
 }
-
+.sidebar--menu.show {
+  display:flex;
+  opacity:1;
+  width:190px;
+  background-color:$black;
+  @include flex-center;
+}
 [class*="sidebar--menu-items"] {
-  width:100%;
+  width:190px;
   margin-bottom: 10px;
   height:45px;
   display:flex;
@@ -70,7 +89,28 @@
 
 // YOUR MANAGER
 .yourmanager-container {
-  width:100%;
+  height:100vh;
+}
+.manager {
+  max-height:50px;
+  border-radius:50%;
+  margin-left:20px;
+
+  &:hover {
+    cursor:pointer;
+  }
+  &:hover .link-small {
+    color:$orange;
+  }
+}
+.small-link {
+  margin-left:5px;
+  margin-top:15px;
+}
+.online-icon {
+  margin-left:-11px;
+  margin-top:3px;
+  border:2px solid $black;
 }
 
   // SIDEBAR SEPERATOR

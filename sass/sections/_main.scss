@@ -2,10 +2,7 @@
 body {
   position:relative;
   background-color:$light-grey;
-}
-main {
-  position:absolute;
-  top:60px;
+  overflow-x:hidden;;
 }
 
 // MAIN
@@ -13,7 +10,9 @@ main {
   width:calc(100vw - 210px) ;
   background-color:$white;
   padding-right: 15px;
-  margin-left: 200px;
-  margin-top:15px;
+  margin-left:200px;
 
+  &:first-child {
+    margin-top:75px;
+  }
 }

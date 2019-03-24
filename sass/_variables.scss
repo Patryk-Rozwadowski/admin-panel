@@ -67,12 +67,8 @@
     cursor: pointer;
     background-color:$dark-grey;
   }
-  &:hover .section-text {
+  &:hover .small-link {
     color:$white;
-  }
-
-  .section-text {
-    font-size:16px;
   }
 
   .fa-circle {
@@ -198,6 +194,7 @@
   @include section-text;
   @include flex-center;
 }
+
 .date--period--date-to {
   height:28px;
   margin-left:10px;
@@ -212,18 +209,26 @@
     color:$dark-grey;
   }
 }
+
+// INPUTS
 input[type="date"] {
   border:0;
 }
 
+// FA-CIRCLE
+.online-icon {
+  background-color:$green;
+  border:1px solid $white;
+  border-radius:50%;
+  width:14px;
+  height:14px;
+}
 .fa-circle-orange {
   color:$orange;
 }
-
 .fa-circle-green {
   color:$green;
 }
-
 .fa-circle-blue {
   color:$blue;
 }
