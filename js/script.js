@@ -6,17 +6,21 @@ var mobileMenu = document.getElementById('hamburger');
 // OVERLAY
 var overlayQuit = document.getElementById('overlay-quit');
 var overlayLogin = document.getElementById('overlay-login');
+
 // QUIT MODAL container
 var quitModalContainer = document.querySelector('.quit-modal-container');
 var loginModalContainer = document.querySelector('.login-modal-container');
+
 // QUIT MODAL OPEN
 document.querySelector(".nav--exit").addEventListener('click', function(){
   openModalQuit();
 });
+
 // LOGIN
 document.querySelector('.nav--profile').addEventListener('click', function(){
   openModalLogin();
 });
+
 // OPEN MODAL FUNCTION
 function openModalQuit() {
   overlayQuit.classList.add('show');
@@ -26,6 +30,7 @@ function openModalLogin() {
   overlayLogin.classList.add('show');
   loginModalContainer.classList.add('show');
 };
+
 // CLOSE MODAL FUNCTION
 function closeModal() {
   overlayQuit.classList.remove('show');
@@ -34,6 +39,12 @@ function closeModal() {
   quitModalContainer.classList.remove('show');
   loginModalContainer.classList.remove('show');
 };
+
+// MODALS BUTTONS
+document.querySelector(".js--close-modal").addEventListener('click', function(event){
+  event.stopPropagation()
+  closeModal();
+});
 
 // CLICK OUTSIDE CLOSE
 overlayQuit.addEventListener('click', function(event) {
@@ -48,13 +59,13 @@ overlayLogin.addEventListener('click', function(event) {
     closeModal();
   }
 });
+
 // ESC QUIT
 document.addEventListener('keyup', function(e) {
   if(e.keyCode === 27) {
     closeModal();
   }
-
-})
+});
 
 /////////////////// MENU
 // HAMBURGER MENU

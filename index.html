@@ -11,6 +11,84 @@
   </head>
   <body>
     <header>
+      <!-- SIDEBAR MENU ITEMS -->
+      <nav>
+        <ul>
+          <li class="sidebar--brand" id="hamburger">
+            <span class="sidebar--brand-title">Account Manager</span>
+            <i class="fas fa-align-justify"></i>
+          </li>
+            <ul class="sidebar--menu">
+              <li class="sidebar--menu-items-general active">
+                <span class="icon-general"></span>
+                <a href="#" class="sidebar--menu-link">General</a>
+              </li>
+
+              <li class="sidebar--menu-items-details">
+                <span class="icon-details"></span>
+                <a href="#" class="sidebar--menu-link">Details</a>
+              </li>
+
+              <li class="sidebar--menu-items-links">
+                <span class="icon-links"></span>
+                <a href="#" class="sidebar--menu-link">Links</a>
+              </li>
+
+              <li class="sidebar--menu-items-banners">
+                <span class="icon-banners"></span>
+                <a href="#" class="sidebar--menu-link">Banners</a>
+              </li>
+
+              <li class="sidebar--menu-items-personaldata">
+                <span class="icon-personaldata"></span>
+                <a href="#" class="sidebar--menu-link">Personal data</a>
+              </li>
+
+              <li class="sidebar--menu-items-payout">
+                <span class="icon-payout"></span>
+                <a href="#" class="sidebar--menu-link">Payout</a>
+              </li>
+
+              <li class="sidebar--menu-items-postback">
+                <span class="icon-postback"></span>
+                <a href="#" class="sidebar--menu-link">Postback</a>
+              </li>
+              <!--- MOBILE NAV -->
+              <ul class="nav--responsive">
+                <li class="sidebar--seperator"></li>
+                <li class="sidebar--menu-items-login">
+                  <span class="icon-personaldata"></span>
+                  <a href="#" class="sidebar--menu-link">Log in</p>
+                </li>
+                <li class="sidebar--menu-items-login">
+                  <span class="icon-wallet"></span>
+                  <span class="sidebar--menu-link"> $1.500.00 </span>
+                </li>
+                <li class="sidebar--menu-items-login">
+                  <span class="icon-personaldata"></span>
+                  <a href="#" class="sidebar--menu-link">Notification</p>
+                </li>
+                <li class="sidebar--menu-items-login">
+                  <span class="icon-quit"></span>
+                  <a href="#" class="sidebar--menu-link">Quit</p>
+                </li>
+              </ul>
+              <li class="sidebar--seperator"></li>
+              <!-- YOUR MANAGER -->
+              <ul class=" yourmanager-container">
+                <li class="row flex-center">
+                  <h1 class="page-header">Your manager</h1>
+                </li>
+
+                <li class="row">
+                  <img src="images/your-manager.jpg" alt="your-manager" class="manager">
+                    <i class="online-icon"></i>
+                    <span class="small-link">John Smith</span>
+                </li>
+              </ul>
+            </ul>
+        </ul>
+      </nav>
       <nav class="nav--container">
         <div class="nav--exit flex-center">
           <span class="icon-quit flex-center"></span>
@@ -26,7 +104,7 @@
               </div>
               <div class="row">
                 <button class="btn btn--grey js--close-modal">Cancel</button>
-                <button class="btn btn--orange js--close-modal" id="js--close-modal">Quit</button>
+                <button class="btn btn--orange js--close-modal">Quit</button>
               </div>
             </div>
           </div>
@@ -75,62 +153,6 @@
             <span class="icon-arrow-down-small"></span>
           </li>
         </ul>
-        <!-- SIDEBAR MENU ITEMS -->
-          <ul>
-            <li class="sidebar--brand" id="hamburger">
-              <span class="sidebar--brand-title">Account Manager</span>
-              <i class="fas fa-align-justify"></i>
-            </li>
-              <ul class="sidebar--menu">
-                <li class="sidebar--menu-items-general active">
-                  <span class="icon-general"></span>
-                  <a href="#" class="sidebar--menu-link">General</a>
-                </li>
-
-                <li class="sidebar--menu-items-details">
-                  <span class="icon-details"></span>
-                  <a href="#" class="sidebar--menu-link">Details</a>
-                </li>
-
-                <li class="sidebar--menu-items-links">
-                  <span class="icon-links"></span>
-                  <a href="#" class="sidebar--menu-link">Links</a>
-                </li>
-
-                <li class="sidebar--menu-items-banners">
-                  <span class="icon-banners"></span>
-                  <a href="#" class="sidebar--menu-link">Banners</a>
-                </li>
-
-                <li class="sidebar--menu-items-personaldata">
-                  <span class="icon-personaldata"></span>
-                  <a href="#" class="sidebar--menu-link">Personal data</a>
-                </li>
-
-                <li class="sidebar--menu-items-payout">
-                  <span class="icon-payout"></span>
-                  <a href="#" class="sidebar--menu-link">Payout</a>
-                </li>
-
-                <li class="sidebar--menu-items-postback">
-                  <span class="icon-postback"></span>
-                  <a href="#" class="sidebar--menu-link">Postback</a>
-                </li>
-                <li class="sidebar--seperator"></li>
-                <!-- YOUR MANAGER -->
-                <ul class=" yourmanager-container">
-                  <li class="row flex-center">
-                    <h1 class="page-header">Your manager</h1>
-                  </li>
-
-                  <li class="row">
-                    <img src="images/your-manager.jpg" alt="your-manager" class="manager">
-                      <i class="online-icon"></i>
-                      <span class="small-link">John Smith</span>
-                  </li>
-                </ul>
-              </ul>
-          </ul>
       </nav>
     </header>
     <main>
@@ -145,12 +167,12 @@
           </div>
 
           <!-- DATE PERIOD SECTION -->
-          <section class="date--period-section flex-center">
+          <section class="date--period-section flex-center ">
             <div class="row">
                 <div class="row">
-                  <form class="date--period--container flex-center">
-                    <input name="date--from" type="date" class=" date--period-from"></p>
-                    <input name="date--to" type="date" class="date--period--date-to"></p>
+                  <form class="date--period--container col-sm-3 flex-center">
+                    <input name="date--from" type="date" class="col-sm-3 date--period-from"></p>
+                    <input name="date--to" type="date" class="col-sm-3 date--period--date-to"></p>
                     <span class="icon-calendar"></span>
                   </form>
                   <button class="btn-reset btn--orange">
@@ -163,13 +185,13 @@
           <!-- LISTS WITH ONE DIGIT -->
           <section class="lists--digit-section">
             <div class="row flex-center">
-              <div class="col-6-xl">
+              <div class="col-xl-3 col-sm-6">
                 <div class="list--one-digit--container">
                   <span class="list--header">Visit Signups</span>
                   <span class="list--digit">124</span>
                 </div>
               </div>
-              <div class="col-6-xl">
+              <div class="col-xl-3 col-sm-6">
                 <div class="list--one-digit--container">
                   <span class="list--header">FTD</span>
                   <span class="list--digit">445</span>
@@ -178,13 +200,13 @@
             </div>
 
             <div class="row flex-center">
-              <div class="col-6-xl">
+              <div class="col-xl-3 col-sm-6">
                 <div class="list--one-digit--container">
                   <span class="list--header">Net deposit</span>
                   <span class="list--digit">564</span>
                 </div>
               </div>
-              <div class="col-6-xl">
+              <div class="col-xl-3 col-sm-6">
                 <div class="list--one-digit--container">
                   <span class="list--header">Turn over</span>
                   <span class="list--digit">432</span>
@@ -195,7 +217,7 @@
 
           <!-- EARNINGS CHART SECTION -->
           <section class="earnings-chart-section">
-            <div class="row">
+            <div class="row col-xl-6 col-sm-6 flex-center">
               <h1 class="section-header">Earnings chart</h1>
             </div>
             <div class="row flex-center">

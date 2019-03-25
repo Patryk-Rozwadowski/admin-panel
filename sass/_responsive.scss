@@ -1,8 +1,11 @@
 
 // media
-
+@media (min-width:801px) {
+  .nav-responsive {
+    display:none;
+  }
+}
 @media (max-width:1020px) {
-
   .container {
     width:100%;
     margin:15px auto;
@@ -10,5 +13,39 @@
     &:first-child {
       margin:65px auto 15px;
     }
+  }
+}
+
+@media (max-width:800px){
+  .nav--responsive {
+    display:block;
+  }
+  .nav--container {
+    display:none;
+  }
+  .container {
+    width:90%;
+    margin:35px auto;
+  }
+  .lists--digit-section .list--one-digit--container {
+    width:50%;
+    margin:0 auto;
+  }
+  .earnings-chart-section .row {
+    text-align: center;
+  }
+  .chart--container {
+    margin:0 auto;
+    width:50%;
+    height:100%;
+  }
+  .chart--container {
+    height:50%;
+  }
+}
+
+@media (max-width:760px) {
+  .list--one-digit--container {
+
   }
 }

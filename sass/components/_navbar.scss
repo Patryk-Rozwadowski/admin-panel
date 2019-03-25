@@ -1,0 +1,53 @@
+// NAVBAR
+
+.nav--container {
+  width:100%;
+  height:60px;
+  border:1px solid $light-grey;
+  background-color:$white;
+  position: fixed;
+}
+
+.nav--exit {
+  position:absolute;
+  display:flex;
+  justify-content: center;
+  right:0;
+  top:0;
+  width:60px;
+  height: 60px;
+  border-left:1px solid $light-grey;
+}
+
+.nav--profile {
+  width:175px;
+  border-left:1px solid $light-grey;
+  position:absolute;
+  right:60px;
+  height:60px;
+}
+
+.nav--notification {
+  width:60px;
+  height:60px;
+  border-left:1px solid $light-grey;
+  position:absolute;
+  right:235px;
+}
+
+.nav--notification-circle {
+  width:8px;
+  height:8px;
+  border-radius:50%;
+  margin-left:-7px;
+  margin-top:-2px;
+  background-color:$dark-orange;
+}
+
+.nav--wallet {
+  width:185px;
+  height:60px;
+  border-left:1px solid $light-grey;
+  position:absolute;
+  right:285px;
+}
