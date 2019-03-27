@@ -62,6 +62,12 @@
     margin:20px;
   }
 }
+.login-modal-container-mobile {
+  display:none;
+}
+.login-modal-container-mobile.show {
+  display:flex;
+}
 .login-container {
   border-bottom:1px solid $light-grey;
   padding:0 10px 40px;

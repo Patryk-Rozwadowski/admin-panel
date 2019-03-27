@@ -3,11 +3,11 @@
 // HAMBURGER
 var mobileMenu = document.getElementById('hamburger');
 
-// OVERLAY
+/////////////////////// OVERLAY////////////////
 var overlayQuit = document.getElementById('overlay-quit');
 var overlayLogin = document.getElementById('overlay-login');
 
-// QUIT MODAL container
+/////////////////// QUIT MODAL container /////////////////////
 var quitModalContainer = document.querySelector('.quit-modal-container');
 var loginModalContainer = document.querySelector('.login-modal-container');
 
@@ -15,11 +15,19 @@ var loginModalContainer = document.querySelector('.login-modal-container');
 document.querySelector(".nav--exit").addEventListener('click', function(){
   openModalQuit();
 });
+document.querySelector(".nav--exit").addEventListener('click', function(){
+  openModalQuit();
+});
+
 
 // LOGIN
 document.querySelector('.nav--profile').addEventListener('click', function(){
   openModalLogin();
 });
+document.querySelector('.sidebar--menu-items-login').addEventListener('click', function(){
+  openModalLogin();
+});
+
 
 // OPEN MODAL FUNCTION
 function openModalQuit() {
@@ -31,6 +39,12 @@ function openModalLogin() {
   loginModalContainer.classList.add('show');
 };
 
+function openMobileModalLogin() {
+  overlayLoginMobile.classList.add('show');
+  loginModalContainerMobile.classList.add('show');
+};
+
+
 // CLOSE MODAL FUNCTION
 function closeModal() {
   overlayQuit.classList.remove('show');
@@ -40,11 +54,13 @@ function closeModal() {
   loginModalContainer.classList.remove('show');
 };
 
+
 // MODALS BUTTONS
 document.querySelector(".js--close-modal").addEventListener('click', function(event){
   event.stopPropagation()
   closeModal();
 });
+
 
 // CLICK OUTSIDE CLOSE
 overlayQuit.addEventListener('click', function(event) {
@@ -60,12 +76,14 @@ overlayLogin.addEventListener('click', function(event) {
   }
 });
 
+
 // ESC QUIT
 document.addEventListener('keyup', function(e) {
   if(e.keyCode === 27) {
     closeModal();
   }
 });
+
 
 /////////////////// MENU
 // HAMBURGER MENU
@@ -77,6 +95,8 @@ mobileMenu.addEventListener('click', function(event){
   event.stopPropagation();
   toggleMenu();
 });
+
+
 // WYKRES
 
 var ctx = document.getElementById('myChart').getContext('2d');

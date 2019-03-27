@@ -343,6 +343,10 @@ input[type="date"] { border: 0; }
 
 .login-modal-container .small-link { margin: 20px; }
 
+.login-modal-container-mobile { display: none; }
+
+.login-modal-container-mobile.show { display: -ms-flexbox; display: flex; }
+
 .login-container { border-bottom: 1px solid #e3e3e3; padding: 0 10px 40px; }
 
 input[type="password"]::-webkit-input-placeholder:before { content: '\0051 '; }
@@ -495,6 +499,8 @@ body { position: relative; background-color: #e3e3e3; overflow-x: hidden; }
 
 @media (max-width: 1020px) { .container { width: 100%; margin: 15px auto; }
   .container:first-child { margin: 65px auto 15px; } }
+
+@media (min-width: 801px) { .sidebar--brand { display: none; } }
 
 @media (max-width: 800px) { .nav--responsive { display: block; }
   .nav--container { display: none; }
