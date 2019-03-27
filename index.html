@@ -53,22 +53,23 @@
                 <span class="icon-postback"></span>
                 <a href="#" class="sidebar--menu-link">Postback</a>
               </li>
+
               <!--- MOBILE NAV -->
               <ul class="nav--responsive">
                 <li class="sidebar--seperator"></li>
-                <li class="sidebar--menu-items-login">
+                <li class="sidebar--menu-items-login" id="overlay-login-mobile">
                   <span class="icon-personaldata"></span>
                   <a href="#" class="sidebar--menu-link">Log in</p>
                 </li>
-                <li class="sidebar--menu-items-login">
+                <li class="sidebar--menu-items-wallet">
                   <span class="icon-wallet"></span>
                   <span class="sidebar--menu-link"> $1.500.00 </span>
                 </li>
-                <li class="sidebar--menu-items-login">
+                <li class="sidebar--menu-items-personaldata">
                   <span class="icon-personaldata"></span>
                   <a href="#" class="sidebar--menu-link">Notification</p>
                 </li>
-                <li class="sidebar--menu-items-login">
+                <li class="sidebar--menu-items-quit" id="overlay-login-mobile">
                   <span class="icon-quit"></span>
                   <a href="#" class="sidebar--menu-link">Quit</p>
                 </li>
@@ -109,6 +110,21 @@
             </div>
           </div>
 
+          <!-- modal exit mobile-->
+          <div class="overlay-bg" id="overlay-quit-mobile">
+            <div class="quit-modal-container">
+
+              <div class="row">
+                <div class="col-xl-12 quit-modal--question">
+                  <span class="page-header">Do you really want to quit?</span>
+                </div>
+              </div>
+              <div class="row">
+                <button class="btn btn--grey js--close-modal">Cancel</button>
+                <button class="btn btn--orange js--close-modal">Quit</button>
+              </div>
+            </div>
+          </div>
 
         </div>
         <div class="nav--profile flex-center">
@@ -170,9 +186,9 @@
           <section class="date--period-section flex-center ">
             <div class="row">
                 <div class="row">
-                  <form class="date--period--container col-sm-3 flex-center">
-                    <input name="date--from" type="date" class="col-sm-3 date--period-from"></p>
-                    <input name="date--to" type="date" class="col-sm-3 date--period--date-to"></p>
+                  <form class="date--period--container flex-center">
+                    <input name="date--from" type="date" class="date--period-from"></p>
+                    <input name="date--to" type="date" class="date--period--date-to"></p>
                     <span class="icon-calendar"></span>
                   </form>
                   <button class="btn-reset btn--orange">
@@ -252,7 +268,7 @@
           <button class="btn btn--orange links-section--button-add">
             <span class="section-text">+ Add new</span>
           </button>
-          <div class="table--link">
+          <div class="table--link ">
             <span class="table--line-header page-header">Home page</span>
             <a href="#" class="small-link">www.homepage.com</a>
             <span class="icon-links"></span>

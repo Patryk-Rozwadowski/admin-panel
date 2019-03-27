@@ -1,10 +1,5 @@
 
 // media
-@media (min-width:801px) {
-  .nav-responsive {
-    display:none;
-  }
-}
 @media (max-width:1020px) {
   .container {
     width:100%;
@@ -39,13 +34,28 @@
     width:50%;
     height:100%;
   }
-  .chart--container {
-    height:50%;
+}
+@media (max-width:750px) {
+  .earnings-chart-section {
+    width:100%;
+
+    .chart--container {
+      width:100%;
+    }
+    .tab {
+      margin:10px 0;
+    }
   }
 }
-
-@media (max-width:760px) {
-  .list--one-digit--container {
-
+@media (max-width:660px) {
+  .list--header {
+    font-size:12px;
+  }
+  .section-header,
+  .table--line-header {
+    font-size:13px;
+  }
+  .links-section .table--link {
+    width:100%;
   }
 }
