@@ -5,20 +5,25 @@ var mobileMenu = document.getElementById('hamburger');
 
 /////////////////////// OVERLAY////////////////
 var overlayQuit = document.getElementById('overlay-quit');
+var overlayQuitMobile = document.getElementById('overlay-quit-mobile');
+
 var overlayLogin = document.getElementById('overlay-login');
+var overlayLoginMobile = document.getElementById('overlay-login-mobile');
 
 /////////////////// QUIT MODAL container /////////////////////
 var quitModalContainer = document.querySelector('.quit-modal-container');
+var quitModalContainerMobile = document.querySelector('.quit-modal-container-mobile');
+
 var loginModalContainer = document.querySelector('.login-modal-container');
+var loginModalContainerMobile = document.querySelector('.login-modal-container-mobile');
 
 // QUIT MODAL OPEN
 document.querySelector(".nav--exit").addEventListener('click', function(){
   openModalQuit();
 });
-document.querySelector(".nav--exit").addEventListener('click', function(){
+document.querySelector(".sidebar--menu-items-quit").addEventListener('click', function(){
   openModalQuit();
 });
-
 
 // LOGIN
 document.querySelector('.nav--profile').addEventListener('click', function(){
@@ -27,7 +32,6 @@ document.querySelector('.nav--profile').addEventListener('click', function(){
 document.querySelector('.sidebar--menu-items-login').addEventListener('click', function(){
   openModalLogin();
 });
-
 
 // OPEN MODAL FUNCTION
 function openModalQuit() {
@@ -38,12 +42,6 @@ function openModalLogin() {
   overlayLogin.classList.add('show');
   loginModalContainer.classList.add('show');
 };
-
-function openMobileModalLogin() {
-  overlayLoginMobile.classList.add('show');
-  loginModalContainerMobile.classList.add('show');
-};
-
 
 // CLOSE MODAL FUNCTION
 function closeModal() {

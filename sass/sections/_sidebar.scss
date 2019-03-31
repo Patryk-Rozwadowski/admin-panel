@@ -38,6 +38,7 @@
   position:fixed;
   flex-direction: column;
   top:60px;
+  z-index: 99999999999;
 }
 .sidebar--menu.show {
   display:flex;

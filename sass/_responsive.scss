@@ -55,11 +55,42 @@
   .list--header {
     font-size:12px;
   }
+  [class*="sidebar--menu-items"]{
+    height:30px;
+  }
   .section-header,
   .table--line-header {
     font-size:13px;
   }
   .links-section .table--link {
     width:100%;
+
+    .table--line-header {
+      width:15%;
+    }
+
+    .small-link{
+      width:40%;
+      margin:0;
+    }
+    .icon-trash,
+    .icon-links {
+      visibility: visible;
+      color:$orange;
+    }
+    .icon-links::before {
+      color:$black;
+    }
+  }
+}
+
+@media (max-width:375px) {
+  .date--period--container{
+  padding:0 10px;
+
+    .date--period-from,
+    .icon-calendar::before {
+      padding:0;
+    }
   }
 }
