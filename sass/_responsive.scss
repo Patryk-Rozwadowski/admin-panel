@@ -85,12 +85,30 @@
 }
 
 @media (max-width:375px) {
+  .container {
+    width:100%;
+  }
   .date--period--container{
-  padding:0 10px;
+    padding:0;
 
-    .date--period-from,
-    .icon-calendar::before {
+    .date--period-from {
       padding:0;
     }
+  }
+}
+@media (max-width:325px){
+
+  .icon-calendar::before {
+    display:none;
+  }
+  .general-statistic-section .btn-reset {
+    margin-left:2px;
+  }
+  .lists--digit-section .list--one-digit--container,
+  .col-sm-6 {
+    max-width:60%;
+  }
+  .links-section .table--link .small-link {
+    width:50%;
   }
 }

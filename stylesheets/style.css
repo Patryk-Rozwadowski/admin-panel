@@ -522,8 +522,14 @@ body { position: relative; background-color: #e3e3e3; overflow-x: hidden; }
   .links-section .table--link .icon-trash, .links-section .table--link .icon-links { visibility: visible; color: #ffa200; }
   .links-section .table--link .icon-links::before { color: #191919; } }
 
-@media (max-width: 375px) { .date--period--container { padding: 0 10px; }
-  .date--period--container .date--period-from, .date--period--container .icon-calendar::before { padding: 0; } }
+@media (max-width: 375px) { .container { width: 100%; }
+  .date--period--container { padding: 0; }
+  .date--period--container .date--period-from { padding: 0; } }
+
+@media (max-width: 325px) { .icon-calendar::before { display: none; }
+  .general-statistic-section .btn-reset { margin-left: 2px; }
+  .lists--digit-section .list--one-digit--container, .col-sm-6 { max-width: 60%; }
+  .links-section .table--link .small-link { width: 50%; } }
 
 .width-100 { width: 100%; }
 

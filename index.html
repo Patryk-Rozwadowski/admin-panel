@@ -18,6 +18,7 @@
             <span class="sidebar--brand-title">Account Manager</span>
             <i class="fas fa-align-justify"></i>
           </li>
+          <li>
             <ul class="sidebar--menu">
               <li class="sidebar--menu-items-general active">
                 <span class="icon-general"></span>
@@ -53,42 +54,46 @@
                 <span class="icon-postback"></span>
                 <a href="#" class="sidebar--menu-link">Postback</a>
               </li>
+              <li>
 
-              <!--- MOBILE NAV -->
-              <ul class="nav--responsive">
-                <li class="sidebar--seperator"></li>
-                <li class="sidebar--menu-items-login">
-                  <span class="icon-personaldata"></span>
-                  <a href="#" class="sidebar--menu-link">Log in</a>
-                  </div>
-                </li>
-                <li class="sidebar--menu-items-wallet">
-                  <span class="icon-wallet"></span>
-                  <span class="sidebar--menu-link"> $1.500.00 </span>
-                </li>
-                <li class="sidebar--menu-items-personaldata">
-                  <span class="icon-personaldata"></span>
-                  <a href="#" class="sidebar--menu-link">Notification</a>
-                </li>
-                <li class="sidebar--menu-items-quit">
-                  <span class="icon-quit"></span>
-                  <a href="#" class="sidebar--menu-link">Quit</a>
-                </li>
-              </ul>
+                <!--- MOBILE NAV -->
+                <ul class="nav--responsive">
+                  <li class="sidebar--seperator"></li>
+                  <li class="sidebar--menu-items-login">
+                    <span class="icon-personaldata"></span>
+                    <a href="#" class="sidebar--menu-link">Log in</a>
+                  </li>
+                  <li class="sidebar--menu-items-wallet">
+                    <span class="icon-wallet"></span>
+                    <span class="sidebar--menu-link"> $1.500.00 </span>
+                  </li>
+                  <li class="sidebar--menu-items-personaldata">
+                    <span class="icon-personaldata"></span>
+                    <a href="#" class="sidebar--menu-link">Notification</a>
+                  </li>
+                  <li class="sidebar--menu-items-quit">
+                    <span class="icon-quit"></span>
+                    <a href="#" class="sidebar--menu-link">Quit</a>
+                  </li>
+                </ul>
+              </li>
               <li class="sidebar--seperator"></li>
               <!-- YOUR MANAGER -->
-              <ul class=" yourmanager-container">
-                <li class="row flex-center">
-                  <h1 class="page-header">Your manager</h1>
-                </li>
+              <li>
+                <ul class=" yourmanager-container">
+                  <li class="row flex-center">
+                    <h1 class="page-header">Your manager</h1>
+                  </li>
 
-                <li class="row">
-                  <img src="images/your-manager.jpg" alt="your-manager" class="manager">
+                  <li class="row">
+                    <img src="images/your-manager.jpg" alt="your-manager" class="manager">
                     <i class="online-icon"></i>
                     <span class="small-link">John Smith</span>
-                </li>
-              </ul>
+                  </li>
+                </ul>
+              </li>
             </ul>
+          </li>
         </ul>
       </nav>
       <nav class="nav--container">
@@ -129,8 +134,8 @@
             <div class="row">
                 <div class="row">
                   <form class="date--period--container flex-center">
-                    <input name="date--from" type="date" class="date--period-from"></p>
-                    <input name="date--to" type="date" class="date--period--date-to"></p>
+                    <input name="date--from" type="date" class="date--period-from">
+                    <input name="date--to" type="date" class="date--period--date-to">
                     <span class="icon-calendar"></span>
                   </form>
                   <button class="btn-reset btn--orange">
@@ -313,15 +318,15 @@
         </div>
         <form class="login-container">
           <div class="row flex-center">
-            <input type="mail" class="login section-text" name="login" attribute="required" placeholder="E-mail"></input>
+            <input type="email" class="login section-text" name="login" required placeholder="E-mail">
           </div>
           <div class="row flex-center">
-            <input type="password" class="login section-text" attribute="required" placeholder="Login"></input>
+            <input type="password" class="login section-text" required placeholder="Login">
           </div>
         </form>
         <div class="row flex-end">
-          <input type="submit" value="Login" action="login-btn" class="btn btn--orange"></input>
-          <input type="submit" value="Register" action="login-btn" class="btn btn--dark-orange"></input>
+          <input type="submit" value="Login"  class="btn btn--orange">
+          <input type="submit" value="Register"  class="btn btn--dark-orange">
         </div>
         <div class="row flex-end">
           <span class="small-link">Password recovery</span>

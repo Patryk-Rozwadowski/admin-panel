@@ -3,21 +3,19 @@
 // HAMBURGER
 var mobileMenu = document.getElementById('hamburger');
 
-/////////////////////// OVERLAY////////////////
 var overlayQuit = document.getElementById('overlay-quit');
 var overlayQuitMobile = document.getElementById('overlay-quit-mobile');
 
 var overlayLogin = document.getElementById('overlay-login');
 var overlayLoginMobile = document.getElementById('overlay-login-mobile');
 
-/////////////////// QUIT MODAL container /////////////////////
 var quitModalContainer = document.querySelector('.quit-modal-container');
 var quitModalContainerMobile = document.querySelector('.quit-modal-container-mobile');
 
 var loginModalContainer = document.querySelector('.login-modal-container');
 var loginModalContainerMobile = document.querySelector('.login-modal-container-mobile');
 
-// QUIT MODAL OPEN
+
 document.querySelector(".nav--exit").addEventListener('click', function(){
   openModalQuit();
 });
@@ -25,7 +23,7 @@ document.querySelector(".sidebar--menu-items-quit").addEventListener('click', fu
   openModalQuit();
 });
 
-// LOGIN
+
 document.querySelector('.nav--profile').addEventListener('click', function(){
   openModalLogin();
 });
@@ -33,7 +31,7 @@ document.querySelector('.sidebar--menu-items-login').addEventListener('click', f
   openModalLogin();
 });
 
-// OPEN MODAL FUNCTION
+
 function openModalQuit() {
   overlayQuit.classList.add('show');
   quitModalContainer.classList.add('show');
@@ -43,7 +41,7 @@ function openModalLogin() {
   loginModalContainer.classList.add('show');
 };
 
-// CLOSE MODAL FUNCTION
+
 function closeModal() {
   overlayQuit.classList.remove('show');
   overlayLogin.classList.remove('show');
@@ -53,14 +51,14 @@ function closeModal() {
 };
 
 
-// MODALS BUTTONS
+
 document.querySelector(".js--close-modal").addEventListener('click', function(event){
   event.stopPropagation()
   closeModal();
 });
 
 
-// CLICK OUTSIDE CLOSE
+
 overlayQuit.addEventListener('click', function(event) {
   if(event.target === this) {
     event.stopPropagation();
@@ -82,9 +80,6 @@ document.addEventListener('keyup', function(e) {
   }
 });
 
-
-/////////////////// MENU
-// HAMBURGER MENU
 function toggleMenu(visible) {
   document.querySelector('.sidebar--menu').classList.toggle('show', visible);
 }
@@ -95,7 +90,6 @@ mobileMenu.addEventListener('click', function(event){
 });
 
 
-// WYKRES
 
 var ctx = document.getElementById('myChart').getContext('2d');
 
@@ -131,32 +125,3 @@ var chart = new Chart(ctx, {
         }]
     },
 });
-/*
-
-document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
-  btn.addEventListener('click', function(e) {
-    e.preventDefault()
-    closeModal()
-  })
-})
-
-document.querySelector('#overlay').addEventListener('click', function(e) {
-  if(e.target === this) {
-    closeModal()
-  }
-})
-
-document.addEventListener('keyup', function(e) {
-  if(e.keyCode === 27) {
-    closeModal()
-  }
-
-})
-function closeModal() {
-  document.getElementById('overlay').classList.remove('show');
-  document.getElementById('#quit-modal').classList.remove('show')
-}
-document.querySelector(".js--close-modal").addEventListener('click', function(){
-  closeModal();
-});
-*/
